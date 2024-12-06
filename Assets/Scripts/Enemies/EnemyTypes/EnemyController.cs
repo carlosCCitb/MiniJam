@@ -26,10 +26,7 @@ public abstract class EnemyController : MonoBehaviour
     {
 
     }
-    public void CleanDeadBody()
-    {
-
-    }
+    public abstract void DeadBehaviour();
     public void AttackFinished()
     {
 
@@ -41,6 +38,15 @@ public abstract class EnemyController : MonoBehaviour
             _currentState.OnStateExit(this);
             _currentState = _currentState.StatesToGo.Find(obj => obj is T);
             _currentState.OnStateEnter(this);
+        }
+    }
+    public void GoToMovingState<T>() where T : StatesSO
+    {
+        if (_currentMovementState.StatesToGo.Find(obj => obj is T))
+        {
+            _currentMovementState.OnStateExit(this);
+            _currentMovementState = _currentMovementState.StatesToGo.Find(obj => obj is T);
+            _currentMovementState.OnStateEnter(this);
         }
     }
 }

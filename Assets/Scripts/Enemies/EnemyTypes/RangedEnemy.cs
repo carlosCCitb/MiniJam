@@ -4,18 +4,22 @@ public class RangedEnemy : EnemyController
 {
     private void Update()
     {
+        _currentMovementState.OnStateUpdate(this);
         float DistanceToPlayer = (Target.transform.position - transform.position).magnitude;
-        if (DistanceToPlayer> _enemySO.Range+_enemySO.Offset)
+        if (DistanceToPlayer > _enemySO.Range + _enemySO.Offset)
         {
-            GoToState<ChaseState>();
+            GoToMovingState<ChaseState>();
         }
-        else if(DistanceToPlayer < _enemySO.Range - _enemySO.Offset)
+        else if (DistanceToPlayer < _enemySO.Range - _enemySO.Offset)
         {
-            GoToState<RunState>();
+            GoToMovingState<RunState>();
         }
-        else
-        {
-
-        }
+        else           
+            GoToMovingState<OrbitState>();
+    }
+    public override void DeadBehaviour()
+    {
+        GoToState<DeathState>();
+        GoToMovingState<InerceState>();
     }
 }
