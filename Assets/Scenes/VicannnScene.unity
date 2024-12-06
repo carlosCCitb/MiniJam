@@ -1529,21 +1529,42 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1998429068}
   - {fileID: 1301828235}
   - {fileID: 4750862063868453854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1892640917 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 287827321755674039, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
-  m_PrefabInstance: {fileID: 8436743756105956713}
+--- !u!1 &1998429067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2c06671af960b4aa9b0b109ec5aa75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998429068}
+  m_Layer: 0
+  m_Name: PlayerBulletSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998429068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998429067}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1701985733}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3426792374452633744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1604,6 +1625,10 @@ PrefabInstance:
       propertyPath: _pathManager
       value: 
       objectReference: {fileID: 1301828236}
+    - target: {fileID: 8985972520015859928, guid: fdd6f9f1ff59c6e4e8d493a30444e600, type: 3}
+      propertyPath: _bulletSpawnPoint
+      value: 
+      objectReference: {fileID: 1998429068}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1679,10 +1704,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 591971179994987048, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
-      propertyPath: _particlePool
-      value: 
-      objectReference: {fileID: 1892640917}
     - target: {fileID: 1025207021166210180, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
       propertyPath: m_Name
       value: GameManager

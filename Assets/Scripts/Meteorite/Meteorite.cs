@@ -18,6 +18,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     [Space, SerializeField] private int _damage;
     [SerializeField] private float _shootingSpeed;
     [SerializeField] private float _shootingCooldown;
+    [SerializeField] private Transform _bulletSpawnPoint;
 
     [Space, SerializeField] private float _acceleration;
     [SerializeField] private Vector2 _minMaxSpeed;
@@ -88,7 +89,7 @@ public class Meteorite : MonoBehaviour, IDamageable
         {
             Vector2 shootingTarget = _camera.ScreenToWorldPoint(_playerInput.MousePosition);
 
-            _shooter.Shoot(Bullet.Type.Standard, shootingTarget, transform.position, (shootingTarget - (Vector2)transform.position).normalized * _shootingSpeed, _damage);
+            _shooter.Shoot(Bullet.Type.Standard, shootingTarget, _bulletSpawnPoint.position, (shootingTarget - (Vector2)_bulletSpawnPoint.position).normalized * _shootingSpeed, _damage);
             _lastTimeShoot = Time.time;
             await UniTask.Delay(TimeSpan.FromSeconds(_shootingCooldown), cancellationToken: _cancellationTokenSource.Token);
         }
