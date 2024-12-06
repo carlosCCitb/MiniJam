@@ -15,17 +15,11 @@ public class EnemyPool : Pool<EnemyController, EnemyController.Type, EnemyContro
     }
 
     protected override void OnActivationManaging(EnemyController obj, params object[] args)
-    {
-        throw new NotImplementedException();
-    }
+    { }
 
     protected override void OnDespawnManaging(EnemyController obj)
-    {
-        throw new NotImplementedException();
-    }
+    { }
 
     protected override void OnInstantiationManaging(EnemyController obj, params object[] args)
-    {
-        throw new NotImplementedException();
-    }
+    { }
 }
