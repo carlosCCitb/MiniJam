@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 6094256769157584593}
   - component: {fileID: 4063328866212476464}
   - component: {fileID: 126113285316266858}
-  m_Layer: 0
+  - component: {fileID: 543540657002267007}
+  m_Layer: 9
   m_Name: Ranged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5518458813803102995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.99, y: -7.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110,6 +111,7 @@ MonoBehaviour:
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   _enemySO: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
   Target: {fileID: 0}
+  _shooter: {fileID: 543540657002267007}
 --- !u!114 &280233531432595758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +156,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -162,10 +164,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &126113285316266858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,3 +183,16 @@ MonoBehaviour:
   _tangentMovement: {fileID: 0}
   _radialMovement: {fileID: 0}
   _timeFactor: 0.77
+--- !u!114 &543540657002267007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518458813803102995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758f7754aa07b474492850d6c447323e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isPlayer: 0
