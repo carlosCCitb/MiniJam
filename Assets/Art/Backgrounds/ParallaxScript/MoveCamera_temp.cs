@@ -25,7 +25,7 @@ public class CameraVerticalMovement : MonoBehaviour
      }*/
     void Update()
     {
-        transform.position += new Vector3(0, Time.deltaTime * 5f, 0);
+        transform.position += new Vector3(0, Time.deltaTime * -moveSpeed, 0);
     }
 
 }
