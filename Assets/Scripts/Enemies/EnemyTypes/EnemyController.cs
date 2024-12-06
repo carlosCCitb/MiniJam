@@ -1,14 +1,28 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
-public abstract class EnemyController : MonoBehaviour
+public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, EnemyController.Type, EnemyController>.IPoolable
 {
+    [Serializable]
+    public enum Type
+    {
+        Standard = 0,
+    }
+
+    [SerializeField] private Type _type;
     [SerializeField] private Vector3 _nextDestination;
     [SerializeField] private Stack<Vector3> _destinationPoints;
     [SerializeField] protected StatesSO _currentState;
     [SerializeField] protected StatesSO _currentMovementState;
     [SerializeField] protected EnemySO _enemySO;
     public Transform Target;
+
+    public Type PoolableType => _type;
+
+    public GameObject PoolableGameObject => gameObject;
+
+    public event Action<EnemyController> OnPoolableDespawnNeeded;
 
     public EnemySO GetEnemySo()
     {
@@ -49,4 +63,6 @@ public abstract class EnemyController : MonoBehaviour
             _currentMovementState.OnStateEnter(this);
         }
     }
+
+    protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
 }

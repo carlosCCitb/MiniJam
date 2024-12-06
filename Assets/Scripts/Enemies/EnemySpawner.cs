@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
     [Serializable]
     private struct SpawnData
     {
-        public EnemyPool.Type enemyType;
+        public Type enemyType;
         public EnemySO enemyData;
         public Transform spawningTransform;
     }
