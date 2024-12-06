@@ -9,4 +9,6 @@ public class EnemySO : ScriptableObject
     public float FallingSpeed, ChaseSpeed, TangentSpeed;
     public Sign Sign;
     public float Coldown;
+    public Bullet.Type BulletType;
+    public float BulletSpeed;
 }
