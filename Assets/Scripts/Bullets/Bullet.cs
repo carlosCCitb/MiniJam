@@ -30,7 +30,12 @@ public class Bullet : MonoBehaviour, Pool<Bullet, Bullet.Type, Bullet>.IPoolable
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.rigidbody.TryGetComponent(out IDamageable damageable))
+        {
             damageable.OnHurt(_damage);
+
+            if (damageable is Meteorite)
+                GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.HitRock, collision.contacts[0].point);
+        }
 
         RequestDespawn();
     }

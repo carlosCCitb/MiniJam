@@ -21,3 +21,5 @@ MonoBehaviour:
   TangentSpeed: 6
   Sign: 1
   Coldown: 2
+  BulletType: 0
+  BulletSpeed: 5

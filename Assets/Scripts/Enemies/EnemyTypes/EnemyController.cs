@@ -2,12 +2,14 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, EnemyController.Type, EnemyController>.IPoolable
+public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, EnemyController.Type, EnemyController>.IPoolable, IDamageable
 {
     [Serializable]
     public enum Type
     {
-        Standard = 0,
+        Ranged = 0,
+        Melee = 1,
+        Exploding = 2
     }
 
     [SerializeField] private Type _type;
@@ -18,6 +20,10 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected EnemySO _enemySO;
     public Transform Target;
 
+    private float _currentHealth;
+
+    protected bool IsDead => _currentHealth == 0;
+
     public Type PoolableType => _type;
 
     public GameObject PoolableGameObject => gameObject;
@@ -27,6 +33,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     public void SetEnemySO(EnemySO enemySO)
     { 
         _enemySO = enemySO;
+
+        _currentHealth = _enemySO.Health;
     }
 
     public EnemySO GetEnemySo()
@@ -71,4 +79,18 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     }
 
     protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
+
+    public void OnHurt(int Damage)
+    {
+        _currentHealth -= Damage;
+        Mathf.Max(_currentHealth, 0);
+
+        if (_currentHealth == 0)
+            OnDie();
+    }
+
+    public void OnDie()
+    {
+        Debug.Log("TODO: enemy dead");
+    }
 }

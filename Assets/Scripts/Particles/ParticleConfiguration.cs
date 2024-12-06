@@ -8,7 +8,8 @@ public class ParticleConfiguration : MonoBehaviour, Pool<ParticleConfiguration, 
 {
     public enum Type
     { 
-        HitRock = 0
+        HitRock = 0,
+        HitDust = 1
     }
 
     [SerializeField] private Type _type;

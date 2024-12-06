@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0692a06177e6e064497b956a19593430
+guid: bf99c2b107e9dba4e9a0cf01074a86cb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -83,7 +83,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: f42b0ccbd4ad2084a8f03f58b63990da
+    spriteID: d186d0e1c6fe161488b4f65e5ca69523
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -95,117 +95,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: roca5
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 747
-      y: 4
-      width: 141
-      height: 330
-    spriteID: 5042f88dc5a4d1f45bf5d61e71540f77
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 747, y: 4}
-    spritePosition: {x: 1221, y: 766}
-  - name: roca4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 588
-      width: 140
-      height: 260
-    spriteID: 79c6f7dc3fef0e54dbd8c2b9e3a49264
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 588}
-    spritePosition: {x: 1186, y: 919}
-  - name: roca3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 903
-      y: 342
-      width: 101
-      height: 227
-    spriteID: cd9b9c091f281a04284a3fb32a34424e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 903, y: 342}
-    spritePosition: {x: 1073, y: 1069}
-  - name: roca2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 747
-      y: 342
-      width: 148
-      height: 220
-    spriteID: 9b3577a0b6c010a44a3d9729fa632c36
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 747, y: 342}
-    spritePosition: {x: 1011, y: 986}
-  - name: roca1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 612
-      y: 4
-      width: 127
-      height: 408
-    spriteID: b4c1b7f2a55b6c149a21b1c826fd2282
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 612, y: 4}
-    spritePosition: {x: 916, y: 699}
-  - name: CUERPO2
+  - name: CUERPO4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -215,9 +105,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 600
-      height: 576
-    spriteID: ccf8ff486cd1b9f4881eeab01f3c51d3
+      width: 244
+      height: 215
+    spriteID: 336d05b0163b1744ab635af04e58aabf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -226,7 +116,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 814, y: 550}
+    spritePosition: {x: 1000, y: 587}
   spriteImportData: []
   rigSpriteImportData: []
   sharedRigSpriteImportData: []
@@ -270,78 +160,138 @@ ScriptedImporter:
     spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 8ccb820bfc5657240af198fff5d38006
+    spriteID: b31d9e51285c7114a8293f94c6beed5a
     layerID: 0
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: roca5
-    spriteName: roca5
+  - name: Capa 1 - copia 2
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 5042f88dc5a4d1f45bf5d61e71540f77
-    layerID: -367552104
-    mosaicPosition: {x: 747, y: 4}
+    spriteID: b4d88602eb21a35459927534a0d0b077
+    layerID: 1073173005
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: roca4
-    spriteName: roca4
+    isImported: 0
+    isVisible: 0
+  - name: Capa 2
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 79c6f7dc3fef0e54dbd8c2b9e3a49264
-    layerID: -367552105
-    mosaicPosition: {x: 4, y: 588}
+    spriteID: 3eeb244b1b4ee07499b3a9d9a83d793a
+    layerID: 1081280041
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: roca3
-    spriteName: roca3
+    isImported: 0
+    isVisible: 0
+  - name: CUERPO3
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: cd9b9c091f281a04284a3fb32a34424e
-    layerID: -367552098
-    mosaicPosition: {x: 903, y: 342}
+    spriteID: 8c079ba63de776d46bf12ec214158de9
+    layerID: 1348667265
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: roca2
-    spriteName: roca2
-    isGroup: 0
+    isImported: 0
+    isVisible: 0
+  - name: "N\xDACLEO"
+    spriteName: 
+    isGroup: 1
     parentIndex: -1
-    spriteID: 9b3577a0b6c010a44a3d9729fa632c36
-    layerID: -367552099
-    mosaicPosition: {x: 747, y: 342}
+    spriteID: c4805760a6f8c354a8d166e4c1affdf4
+    layerID: -1510587655
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
-  - name: roca1
-    spriteName: roca1
+  - name: CUERPO4
+    spriteName: CUERPO4
     isGroup: 0
-    parentIndex: -1
-    spriteID: b4c1b7f2a55b6c149a21b1c826fd2282
-    layerID: -367552100
-    mosaicPosition: {x: 612, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: CUERPO2
-    spriteName: CUERPO2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: ccf8ff486cd1b9f4881eeab01f3c51d3
-    layerID: 1348667266
+    parentIndex: 4
+    spriteID: 336d05b0163b1744ab635af04e58aabf
+    layerID: 1348667272
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: ROCAS1
+  - name: M2
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: c90415389a3604d4aa0b5eea0093f479
-    layerID: -2026141719
+    spriteID: b7047a275f2d8094dae5db21fc4a3d99
+    layerID: -1063954565
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: roca5
+    spriteName: 
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 72cf8c41c58f48847a5fa513af2b26c1
+    layerID: -367552104
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: roca4
+    spriteName: 
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 1545c41cffbd80a48a8b24dd2cb0ca75
+    layerID: -367552105
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: roca3
+    spriteName: 
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 4fdc8bd2651159f4887cea9148ad39a9
+    layerID: -367552098
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: roca2
+    spriteName: 
+    isGroup: 0
+    parentIndex: 6
+    spriteID: f9f0ee8b58c45a54f94025eb2a6882cc
+    layerID: -367552099
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: roca1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 6
+    spriteID: befea0242aeac3246984f248ae6653ff
+    layerID: -367552100
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: CUERPO2
+    spriteName: 
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 9b3bbd298bf06194b915bf5e6c92a079
+    layerID: 1348667266
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: M1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 9368de8f455782f478f8b2346c847b29
+    layerID: -1467239092
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
@@ -349,8 +299,8 @@ ScriptedImporter:
   - name: ROCA1
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: cc0957cf9c96f7b4cbbe3c7475ecfca0
+    parentIndex: 13
+    spriteID: a23344fbb814181419c983493926be73
     layerID: 1279633756
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -359,8 +309,8 @@ ScriptedImporter:
   - name: ROCA2
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: 8e4d3417557a38f42b2c72ea48f95ded
+    parentIndex: 13
+    spriteID: 88ccfc70142ccc743b2b0102c1d93bd9
     layerID: 1279633757
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -369,8 +319,8 @@ ScriptedImporter:
   - name: ROCA3
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: fbf4fe5b4684f104f91ca20aa16fcdc9
+    parentIndex: 13
+    spriteID: 3060f4916901a8d4f931fa423dc58e14
     layerID: 1279633758
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -379,8 +329,8 @@ ScriptedImporter:
   - name: ROCA4
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: b7af96aaa35ba294aadac43ae7205431
+    parentIndex: 13
+    spriteID: 94df4fea9143b6f4f8b23780c69a8e83
     layerID: 1279633751
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -389,8 +339,8 @@ ScriptedImporter:
   - name: ROCA5
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: 0654cd2d6d36641429f48fb26074d000
+    parentIndex: 13
+    spriteID: 3f36a561be919164696bd60d28473c3e
     layerID: 1279633752
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -399,8 +349,8 @@ ScriptedImporter:
   - name: ROCA6
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: d605d468e9acd3a42a9514c8dc07756c
+    parentIndex: 13
+    spriteID: 309cbaddb7b9e964cb08f767f9d7a8e7
     layerID: 1279633753
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -409,8 +359,8 @@ ScriptedImporter:
   - name: ROCA7
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: ac63077e1f841ec45aad82e135250c62
+    parentIndex: 13
+    spriteID: 2c4f17a23a8109947b4cab51e3674779
     layerID: 1279633754
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -419,38 +369,28 @@ ScriptedImporter:
   - name: ROCA8
     spriteName: 
     isGroup: 0
-    parentIndex: 7
-    spriteID: 87ffcff6417cf854d9aebe9a3eb8f063
+    parentIndex: 13
+    spriteID: 6a62547d09efeec4dbaf97a02d85ab29
     layerID: 1279633763
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: CUERPO1 - copia
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8daf6242fd06dff469382325f278036f
-    layerID: 1026028756
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: CUERPO1
     spriteName: 
     isGroup: 0
-    parentIndex: -1
-    spriteID: 47ab00412af60d84e8c14727b0edc1e4
+    parentIndex: 13
+    spriteID: 63281ae7d70daa543b380e178ec283b6
     layerID: 1348667267
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 0
+    isVisible: 1
   - name: Papel
     spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 9f778f8de88f3e446b407ed883cd80da
+    spriteID: e054af79a15ae734a8556ba7708373ee
     layerID: -1779142674
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
