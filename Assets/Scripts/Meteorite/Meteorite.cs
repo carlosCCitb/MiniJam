@@ -4,12 +4,15 @@ using System;
 using System.Threading;
 using UnityEngine;
 
-public class Meteorite : MonoBehaviour
+public class Meteorite : MonoBehaviour, IDamageable
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Shooter _shooter;
+
+    [Space, SerializeField] private int _healthPoints;
+    [SerializeField, ReadOnly] private int _currentHealthPoints;
 
     [Space, SerializeField] private int _damage;
     [SerializeField] private float _shootingSpeed;
@@ -17,12 +20,17 @@ public class Meteorite : MonoBehaviour
 
     [Space, SerializeField] private float _acceleration;
     [SerializeField] private Vector2 _maxMinVelocity;
-    [ShowNonSerializedField, ReadOnly] private float _currentVelocity;
-    [ShowNonSerializedField, ReadOnly] private Vector2 _inputVelocity;
+    [SerializeField, ReadOnly] private Vector2 _inputVelocity;
+    [SerializeField, ReadOnly] private float _currentVerticalSpeed;
 
     private float _lastTimeShoot;
 
     private CancellationTokenSource _cancellationTokenSource;
+
+    private void Awake()
+    {
+        _currentHealthPoints = _healthPoints;
+    }
 
     private void OnEnable()
     {
@@ -39,11 +47,13 @@ public class Meteorite : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {   
-        _rigidbody.AddForce(_acceleration * _rigidbody.mass * _inputVelocity / (Mathf.Max(Mathf.Abs(_currentVelocity), 1000.0f) * 0.01f), ForceMode2D.Force);
+    {
+        float healthSpeedRatio = ((float)_currentHealthPoints / (float)_healthPoints) + 0.5f;
+
+        _rigidbody.AddForce(_acceleration * _rigidbody.mass * _inputVelocity / (Mathf.Max(Mathf.Abs(_currentVerticalSpeed), 1000.0f) * healthSpeedRatio * 0.01f), ForceMode2D.Force);
         
-        _currentVelocity -= (_inputVelocity.y + (_camera.transform.position.y - _rigidbody.position.y)) * _acceleration * Time.fixedDeltaTime;
-        _currentVelocity = Mathf.Clamp(_currentVelocity, _maxMinVelocity.x, _maxMinVelocity.y);
+        _currentVerticalSpeed -= (_inputVelocity.y + (_camera.transform.position.y - _rigidbody.position.y)) * _acceleration * Time.fixedDeltaTime;
+        _currentVerticalSpeed = Mathf.Clamp(_currentVerticalSpeed, _maxMinVelocity.x, _maxMinVelocity.y);
     }
 
     private void OnInputMoveChanged(Vector2 input)
@@ -79,6 +89,29 @@ public class Meteorite : MonoBehaviour
             _lastTimeShoot = Time.time;
             await UniTask.Delay(TimeSpan.FromSeconds(_shootingCooldown), cancellationToken: _cancellationTokenSource.Token);
         }
+    }
+
+    public void OnHurt(int damage)
+    {
+        _currentHealthPoints -= damage;
+        Mathf.Max(_currentHealthPoints, 0);
+
+        if (_currentHealthPoints == 0)
+            OnDie();
+    }
+
+    public void OnDie()
+    {
+        // TODO
+        Debug.Log($"[{nameof(Meteorite)}.cs] Player dead");
+
+        enabled = false;
+    }
+
+    [Button]
+    private void DoDamage()
+    {
+        OnHurt(10);
     }
 
     private void OnDestroy()
