@@ -9,7 +9,10 @@ public class GameManager : MonoBehaviour
 
 
     [SerializeField] private AudioSourcePool _audioSourcePool;
+    [SerializeField] private BulletPool _bulletPool;
+
     public AudioSourcePool AudioSourcePool => _audioSourcePool;
+    public BulletPool BulletPool => _bulletPool;
 
 
 

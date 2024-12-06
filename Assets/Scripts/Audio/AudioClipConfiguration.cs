@@ -11,12 +11,7 @@ public class AudioClipConfiguration : ScriptableObject
     [Serializable]
     public enum Type
     {
-        None,
-        UI_Notification,
-        UI_Confirm_1,
-        UI_Confirm_2,
-        UI_Click_1,
-        UI_Click_2
+        None = 0
     }
 
     public enum Space

@@ -50,6 +50,6 @@ public class TestVictor : MonoBehaviour
     private void OnDestroy()
     {
         _cancellationTokenSource?.Cancel();
-        _cancellationTokenSource.Dispose();
+        _cancellationTokenSource?.Dispose();
     }
 }
