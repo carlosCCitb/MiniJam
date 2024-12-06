@@ -24,10 +24,16 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
 
     public event Action<EnemyController> OnPoolableDespawnNeeded;
 
+    public void SetEnemySO(EnemySO enemySO)
+    { 
+        _enemySO = enemySO;
+    }
+
     public EnemySO GetEnemySo()
     {
         return _enemySO;
     }
+
     public void SetNextDirection()
     {
 
