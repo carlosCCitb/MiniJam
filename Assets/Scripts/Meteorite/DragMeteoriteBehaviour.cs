@@ -1,16 +1,17 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 public class DragMeteoriteBehaviour : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public List<GameObject> MeteorSkins;
+    [SerializeField] private int _currentSkin;
+    private void Awake()
     {
-        
+        _currentSkin = 0;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void ChangeSkin(int i)
     {
-        
+        MeteorSkins[_currentSkin].SetActive(false);
+        _currentSkin = i;
+        MeteorSkins[_currentSkin].SetActive(true);
     }
 }

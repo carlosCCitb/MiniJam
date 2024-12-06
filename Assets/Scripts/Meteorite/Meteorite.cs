@@ -28,10 +28,12 @@ public class Meteorite : MonoBehaviour, IDamageable
     private float _lastTimeShoot;
 
     private CancellationTokenSource _cancellationTokenSource;
+    private DragMeteoriteBehaviour _dragBehaviour;
 
     private void Awake()
     {
         _currentHealthPoints = _healthPoints;
+        _dragBehaviour = GetComponentInChildren<DragMeteoriteBehaviour>();
     }
 
     private void OnEnable()
@@ -78,8 +80,7 @@ public class Meteorite : MonoBehaviour, IDamageable
 
     private async UniTaskVoid ShootAsync()
     {
-        await UniTask.WaitUntil(() => Time.timeScale != 0);
-
+        await UniTask.WaitUntil(() => Time.timeScale != 0, cancellationToken: _cancellationTokenSource.Token);
         float timeSinceLastShoot = Time.time - _lastTimeShoot;
 
         if (timeSinceLastShoot < _shootingCooldown)
@@ -94,10 +95,25 @@ public class Meteorite : MonoBehaviour, IDamageable
             await UniTask.Delay(TimeSpan.FromSeconds(_shootingCooldown), cancellationToken: _cancellationTokenSource.Token);
         }
     }
-
+    /*[Button]
+    public void Hurt1()
+    {
+        OnHurt(9);
+    }*/
     public void OnHurt(int damage)
     {
         _currentHealthPoints -= damage;
+        float proportion = (float)_currentHealthPoints / (float)_healthPoints;
+        int skin = proportion switch
+        {
+            float x when x > 0.8 => 0,
+            float x when x > 0.6 => 1,
+            float x when x > 0.4 => 2,
+            float x when x > 0.2 => 3,
+            _ => 4
+        };
+        _dragBehaviour.ChangeSkin(skin);
+
         Mathf.Max(_currentHealthPoints, 0);
 
         if (_currentHealthPoints == 0)
@@ -120,7 +136,6 @@ public class Meteorite : MonoBehaviour, IDamageable
 
     private void OnDestroy()
     {
-        _cancellationTokenSource?.Cancel();
         _cancellationTokenSource?.Dispose();
     }
 }
