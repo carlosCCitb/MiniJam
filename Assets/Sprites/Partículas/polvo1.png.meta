@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 4fb4f37fd8850b7468420e11a8e5c608
+guid: d20aaee6a6aff504fb1a76b673415298
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3550931284042105813
-    second: Mountain_3_0
-  - first:
-      213: -8043756154765290674
-    second: Mountain_3_1
+      213: 3372073493728350627
+    second: polvo1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mountain_3_0
+      name: polvo1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2146
+        x: 52
+        y: 51
+        width: 48
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2c39d09fce88bec0800000000000000
-      internalID: -3550931284042105813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mountain_3_1
-      rect:
-        serializedVersion: 2
-        x: 1464
-        y: 2125
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e435a571566de5090800000000000000
-      internalID: -8043756154765290674
+      spriteID: 3a1503ef9f20cce20800000000000000
+      internalID: 3372073493728350627
       vertices: []
       indices: 
       edges: []
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Mountain_3_0: -3550931284042105813
-      Mountain_3_1: -8043756154765290674
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
