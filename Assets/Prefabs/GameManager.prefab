@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 591971179994987048}
   - component: {fileID: 8034998824883628406}
   - component: {fileID: 1660813418605220402}
+  - component: {fileID: 287827321755674039}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioSourcePool: {fileID: 8034998824883628406}
   _bulletPool: {fileID: 1660813418605220402}
+  _enemyPool: {fileID: 0}
 --- !u!114 &8034998824883628406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,4 +82,21 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value: {fileID: 3934821431327897346, guid: 9ca8af6f2e4d1814ab075e5ba4cdf4c0, type: 3}
+  _value: {fileID: 0}
+--- !u!114 &287827321755674039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025207021166210180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2c06671af960b4aa9b0b109ec5aa75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _typePerValueDic:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 6601585769555982425, guid: 2bcc263a1cf8e0d45a8ace3c76bf3bc8, type: 3}
   _value: {fileID: 0}
