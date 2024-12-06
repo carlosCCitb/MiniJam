@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ba1bea552279944bcc59effd7572a4, type: 3}
   m_Name: DeathState
   m_EditorClassIdentifier: 
-  StatesToGo: []
+  StatesToGo:
+  - {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}

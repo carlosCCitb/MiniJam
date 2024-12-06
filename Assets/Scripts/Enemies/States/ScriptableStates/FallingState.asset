@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb73e124b13c8a4190c84254565f3b9, type: 3}
   m_Name: FallingState
   m_EditorClassIdentifier: 
-  StatesToGo: []
+  StatesToGo:
+  - {fileID: 11400000, guid: 3923f0609a7b5d1469a246e36b2b9c8d, type: 2}
+  - {fileID: 11400000, guid: b25593ac10e13c645ae92fccc128d2b6, type: 2}
