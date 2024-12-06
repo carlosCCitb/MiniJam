@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      polvo2_0: -8690444159323734762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
