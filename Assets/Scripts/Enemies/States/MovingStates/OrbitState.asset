@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebfaf7fcc996b5a4f924624d7e81ab1f, type: 3}
-  m_Name: InerceState
+  m_Script: {fileID: 11500000, guid: 5f4737f44779d41498c2899e3354497c, type: 3}
+  m_Name: OrbitState
   m_EditorClassIdentifier: 
   StatesToGo:
   - {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
-  - {fileID: 11400000, guid: 8db2dbb791dcec744be42a959d37afbe, type: 2}
+  - {fileID: 11400000, guid: 8716569f25048d64e8be54e58d42b168, type: 2}
   - {fileID: 11400000, guid: 096893c4b6b35dd469d6196e8f1c3301, type: 2}

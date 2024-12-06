@@ -7,5 +7,6 @@ public class EnemySO : ScriptableObject
     public float Range;
     public float Offset;
     public float FallingSpeed, ChaseSpeed, TangentSpeed;
+    public Sign Sign;
     public float Coldown;
 }
