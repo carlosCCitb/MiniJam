@@ -1533,6 +1533,17 @@ Transform:
   - {fileID: 4750862063868453854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1892640917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 287827321755674039, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
+  m_PrefabInstance: {fileID: 8436743756105956713}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2c06671af960b4aa9b0b109ec5aa75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3426792374452633744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1668,6 +1679,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 591971179994987048, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
+      propertyPath: _particlePool
+      value: 
+      objectReference: {fileID: 1892640917}
     - target: {fileID: 1025207021166210180, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
       propertyPath: m_Name
       value: GameManager
