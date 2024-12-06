@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad312203e88eac47a6557fe29a20900, type: 3}
-  m_Name: Ranged
+  m_Name: Melee
   m_EditorClassIdentifier: 
   Health: 5
   Damage: 5
-  Range: 5
-  Offset: 0.7
+  Range: 4
+  Offset: 1
   FallingSpeed: 3
-  ChaseSpeed: 5
-  TangentSpeed: 6
-  Sign: 1
+  ChaseSpeed: 13.56
+  TangentSpeed: 9.94
+  Sign: 0
   Coldown: 2

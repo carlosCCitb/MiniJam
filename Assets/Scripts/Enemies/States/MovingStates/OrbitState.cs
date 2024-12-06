@@ -17,7 +17,9 @@ public class OrbitState : StatesSO
     {
         Rigidbody2D rigidbody = enemyController.GetComponent<Rigidbody2D>();
         TangentMovement tangentMovement = enemyController.GetComponent<TangentMovement>();
-        float radii = (enemyController.Target.position - enemyController.transform.position).magnitude;
-        rigidbody.AddForce(tangentMovement.Direction * tangentMovement.Direction / radii * rigidbody.mass);
+        Vector2 radDirection = enemyController.Target.position - enemyController.transform.position;
+        float radii = radDirection.magnitude;
+        float value = tangentMovement.Direction.magnitude * tangentMovement.Direction.magnitude / radii * rigidbody.mass;
+        rigidbody.AddForce(radDirection.normalized * value);
     }
 }

@@ -6,4 +6,17 @@ public class MeleeEnemy : EnemyController
     {
         throw new System.NotImplementedException();
     }
+    private void Update()
+    {
+        _currentMovementState.OnStateUpdate(this);
+        float DistanceToPlayer = (Target.transform.position - transform.position).magnitude;
+        if (DistanceToPlayer > _enemySO.Range + _enemySO.Offset)
+        {
+            GoToMovingState<ChaseState>();
+        }
+        else if (DistanceToPlayer < _enemySO.Range - _enemySO.Offset)
+        {
+            GoToMovingState<RunState>();
+        }
+    }
 }

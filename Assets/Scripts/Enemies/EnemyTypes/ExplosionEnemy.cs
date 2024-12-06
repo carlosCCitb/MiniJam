@@ -6,4 +6,9 @@ public class ExplosionEnemy : EnemyController
     {
         throw new System.NotImplementedException();
     }
+    private void Update()
+    {
+        _currentMovementState.OnStateUpdate(this);
+        float DistanceToPlayer = (Target.transform.position - transform.position).magnitude;
+    }
 }
