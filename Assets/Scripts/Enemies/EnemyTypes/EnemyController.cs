@@ -13,8 +13,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] private Type _type;
     [SerializeField] private Vector3 _nextDestination;
     [SerializeField] private Stack<Vector3> _destinationPoints;
-    [SerializeField] protected StatesSO _currentState;
-    [SerializeField] protected StatesSO _currentMovementState;
+    [SerializeField] protected NormalStates _currentState;
+    [SerializeField] protected MovementStatesSO _currentMovementState;
     [SerializeField] protected EnemySO _enemySO;
     public Transform Target;
 
@@ -51,7 +51,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     {
 
     }
-    public void GoToState<T>() where T : StatesSO
+    public void GoToState<T>() where T : NormalStates
     {
         if (_currentState.StatesToGo.Find(obj => obj is T))
         {
@@ -60,12 +60,12 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
             _currentState.OnStateEnter(this);
         }
     }
-    public void GoToMovingState<T>() where T : StatesSO
+    public void GoToMovingState<T>() where T : MovementStatesSO
     {
-        if (_currentMovementState.StatesToGo.Find(obj => obj is T))
+        if (_currentMovementState.MovementStatesToGo.Find(obj => obj is T))
         {
             _currentMovementState.OnStateExit(this);
-            _currentMovementState = _currentMovementState.StatesToGo.Find(obj => obj is T);
+            _currentMovementState = _currentMovementState.MovementStatesToGo.Find(obj => obj is T);
             _currentMovementState.OnStateEnter(this);
         }
     }

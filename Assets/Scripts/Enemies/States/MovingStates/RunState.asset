@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e208de3e999cc25419dca0d25ceb89c5, type: 3}
   m_Name: RunState
   m_EditorClassIdentifier: 
-  StatesToGo:
+  MovementStatesToGo:
   - {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   - {fileID: 11400000, guid: 8716569f25048d64e8be54e58d42b168, type: 2}
   - {fileID: 11400000, guid: 8db2dbb791dcec744be42a959d37afbe, type: 2}

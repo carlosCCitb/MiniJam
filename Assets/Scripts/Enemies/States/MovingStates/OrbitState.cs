@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "OrbitState", menuName = "ScriptableObjects/States/OrbitState")]
-public class OrbitState : StatesSO
+public class OrbitState : MovementStatesSO
 {
     public override void OnStateEnter(EnemyController enemyController)
     {

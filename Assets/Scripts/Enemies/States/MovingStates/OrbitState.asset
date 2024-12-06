@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4737f44779d41498c2899e3354497c, type: 3}
   m_Name: OrbitState
   m_EditorClassIdentifier: 
-  StatesToGo:
+  MovementStatesToGo:
   - {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   - {fileID: 11400000, guid: 8716569f25048d64e8be54e58d42b168, type: 2}
   - {fileID: 11400000, guid: 096893c4b6b35dd469d6196e8f1c3301, type: 2}

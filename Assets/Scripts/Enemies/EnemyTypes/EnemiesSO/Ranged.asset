@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 5
   Damage: 5
-  Range: 5
-  Offset: 0.7
+  Range: 6
+  Offset: 3
   FallingSpeed: 3
-  ChaseSpeed: 5
+  ChaseSpeed: 3
   TangentSpeed: 6
   Sign: 1
   Coldown: 2
