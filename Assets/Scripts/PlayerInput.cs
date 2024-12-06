@@ -6,11 +6,10 @@ public class PlayerInput : MonoBehaviour, InputSystem_Actions.IPlayerActions
 {
     private InputSystem_Actions _actMap;
 
-    private Vector2 _mousePosition;
-
     public event Action<bool> OnInputAttack;
     public event Action<Vector2> OnInputMove;
-    public event Action<Vector2> OnInputMouse;
+
+    public Vector2 MousePosition { get; private set; }
 
     private void Awake()
     {
@@ -44,8 +43,6 @@ public class PlayerInput : MonoBehaviour, InputSystem_Actions.IPlayerActions
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        _mousePosition += context.ReadValue<Vector2>();
-
-        OnInputMouse?.Invoke(_mousePosition);
+        MousePosition = context.ReadValue<Vector2>();
     }
 }
