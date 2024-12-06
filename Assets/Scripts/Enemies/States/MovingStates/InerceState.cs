@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "InerceState", menuName = "ScriptableObjects/States/InerceState")]
-public class InerceState : StatesSO
+public class InerceState : MovementStatesSO
 {
     public override void OnStateEnter(EnemyController enemyController)
     {

@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e2d6137baca0f4e9be7e1ee473b246, type: 3}
   m_Name: AttackState
   m_EditorClassIdentifier: 
-  StatesToGo: []
+  StatesToGo:
+  - {fileID: 11400000, guid: b25593ac10e13c645ae92fccc128d2b6, type: 2}
+  - {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}

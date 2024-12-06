@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "AttackState", menuName = "ScriptableObjects/States/AttackState")]
-public class AttackState : StatesSO
+public class AttackState : NormalStates
 {
     public override void OnStateEnter(EnemyController enemyController)
     {

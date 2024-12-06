@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ChaseState", menuName = "ScriptableObjects/States/ChaseState")]
-public class ChaseState : StatesSO
+public class ChaseState : MovementStatesSO
 {
     public override void OnStateEnter(EnemyController enemyController)
     {

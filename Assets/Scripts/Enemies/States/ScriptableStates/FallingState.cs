@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "FallingState", menuName = "ScriptableObjects/States/FallingState")]
-public class FallingState : StatesSO
+public class FallingState : NormalStates
 {
     public override void OnStateEnter(EnemyController enemyController)
     {
