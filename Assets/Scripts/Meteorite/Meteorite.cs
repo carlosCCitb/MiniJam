@@ -10,6 +10,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Shooter _shooter;
+    [SerializeField] private PathManager _pathManager;
 
     [Space, SerializeField] private int _healthPoints;
     [SerializeField, ReadOnly] private int _currentHealthPoints;
@@ -19,7 +20,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     [SerializeField] private float _shootingCooldown;
 
     [Space, SerializeField] private float _acceleration;
-    [SerializeField] private Vector2 _maxMinVelocity;
+    [SerializeField] private Vector2 _minMaxSpeed;
     [SerializeField, ReadOnly] private Vector2 _inputVelocity;
     [SerializeField, ReadOnly] private float _currentVerticalSpeed;
 
@@ -53,7 +54,9 @@ public class Meteorite : MonoBehaviour, IDamageable
         _rigidbody.AddForce(_acceleration * _rigidbody.mass * _inputVelocity / (Mathf.Max(Mathf.Abs(_currentVerticalSpeed), 1000.0f) * healthSpeedRatio * 0.01f), ForceMode2D.Force);
         
         _currentVerticalSpeed -= (_inputVelocity.y + (_camera.transform.position.y - _rigidbody.position.y)) * _acceleration * Time.fixedDeltaTime;
-        _currentVerticalSpeed = Mathf.Clamp(_currentVerticalSpeed, _maxMinVelocity.x, _maxMinVelocity.y);
+        _currentVerticalSpeed = Mathf.Clamp(_currentVerticalSpeed, _minMaxSpeed.x, _minMaxSpeed.y);
+
+        _pathManager.AddDisplacement(_currentVerticalSpeed, _minMaxSpeed, Time.fixedDeltaTime);
     }
 
     private void OnInputMoveChanged(Vector2 input)

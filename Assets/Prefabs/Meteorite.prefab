@@ -140,15 +140,16 @@ MonoBehaviour:
   _rigidbody: {fileID: 6144965914058483130}
   _playerInput: {fileID: 5669315851311187854}
   _shooter: {fileID: 7180003674382202859}
+  _pathManager: {fileID: 0}
   _healthPoints: 100
   _currentHealthPoints: 0
   _damage: 1
   _shootingSpeed: 15
   _shootingCooldown: 0.25
   _acceleration: 500
-  _maxMinVelocity: {x: -10000, y: 100}
-  _currentVelocity: 0
+  _minMaxSpeed: {x: -10000, y: 100}
   _inputVelocity: {x: 0, y: 0}
+  _currentVerticalSpeed: 0
 --- !u!114 &7180003674382202859
 MonoBehaviour:
   m_ObjectHideFlags: 0
