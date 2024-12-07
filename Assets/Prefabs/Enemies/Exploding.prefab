@@ -127,8 +127,10 @@ MonoBehaviour:
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   _enemySO: {fileID: 11400000, guid: db816694ecec411439e0aa38c28e75e9, type: 2}
   _spriteRenderer: {fileID: 7098431659982256263}
-  Target: {fileID: 6505803189394351128}
+  Target: {fileID: 0}
+  RedColor: {r: 0.6679245, g: 0.2961552, b: 0.2961552, a: 1}
   _currentHealth: 0
+  _deathTime: 1.5
   _layersToApplyExplosionForces:
     serializedVersion: 2
     m_Bits: 256
@@ -231,6 +233,10 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: 55103c9f087b1294795ea1005590da6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5772446493872937663, guid: 55103c9f087b1294795ea1005590da6d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 290
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

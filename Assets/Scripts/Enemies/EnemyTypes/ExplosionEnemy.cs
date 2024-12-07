@@ -1,14 +1,7 @@
 using UnityEngine;
-
 public class ExplosionEnemy : EnemyController
 {
     [SerializeField] private LayerMask _layersToApplyExplosionForces;
-
-    public override void DeadBehaviour()
-    {
-        //RequestDespawn();
-    }
-
     private void LateUpdate()
     {
         Quaternion lookRotation = Quaternion.Euler(new Vector3(0f, 0f, AngleBetweenPoints(transform.position, Target.position) + 90.0f));
@@ -34,7 +27,6 @@ public class ExplosionEnemy : EnemyController
             ApplyExplosionForces();
 
             GoToState<DeathState>();
-            DeadBehaviour();
         }
     }
 

@@ -6,6 +6,7 @@ public class DeathState : NormalStates
     public override void OnStateEnter(EnemyController enemyController)
     {
         //enemyController.gameObject.GetComponent<AnimationController>().Die();
+        enemyController.DeadBehaviour();
         if(enemyController.TryGetComponent<TangentMovement>(out TangentMovement tang))
             enemyController.GetComponent<TangentMovement>().enabled = false;
     }

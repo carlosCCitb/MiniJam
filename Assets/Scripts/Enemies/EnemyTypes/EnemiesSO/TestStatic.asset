@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad312203e88eac47a6557fe29a20900, type: 3}
-  m_Name: Ranged 1
+  m_Name: TestStatic
   m_EditorClassIdentifier: 
   Health: 5
   Damage: 5
-  Range: 4
-  Offset: 0.7
-  FallingSpeed: 3
-  ChaseSpeed: 6
-  TangentSpeed: 15
-  Sign: 1
-  Coldown: 2
+  Range: 5
+  Offset: 5
+  FallingSpeed: 0
+  ChaseSpeed: 0
+  TangentSpeed: 0
+  Sign: 0
+  Coldown: 5
+  BulletType: 0
+  BulletSpeed: 0
