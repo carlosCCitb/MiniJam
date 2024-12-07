@@ -684,13 +684,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896719131994230009, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
-      propertyPath: _camera
-      value: 
-      objectReference: {fileID: 519420031}
     - target: {fileID: 6237253089448613554, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
       propertyPath: m_Name
-      value: GameObject
+      value: MeteoriteParent
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

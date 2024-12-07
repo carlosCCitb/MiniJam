@@ -1060,7 +1060,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 35
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5917,6 +5917,14 @@ MonoBehaviour:
   - {fileID: 3901158470055400395}
   - {fileID: 8094146125918434668}
   _currentSkin: 0
+  particles: {fileID: 7327787484306536543}
+  ShapeValues:
+  - 2
+  - 1.5
+  - 0.75
+  - 0.5
+  - 0.5
+  rateMultiplier: 0.2
 --- !u!1 &3073842565677988010
 GameObject:
   m_ObjectHideFlags: 0
