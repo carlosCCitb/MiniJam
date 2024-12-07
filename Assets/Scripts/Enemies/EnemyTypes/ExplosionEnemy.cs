@@ -26,6 +26,7 @@ public class ExplosionEnemy : EnemyController
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if()
         GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.Explosion, transform.position);
 
         DoDamage(collision.rigidbody);
