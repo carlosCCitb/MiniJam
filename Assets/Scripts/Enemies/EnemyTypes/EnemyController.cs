@@ -23,9 +23,10 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected EnemySO _enemySO;
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     public Transform Target;
+    public Transform TargetToHit;
     [SerializeField] private Color RedColor;
     private Collider2D _collider;
-
+    public float AttackRange;
     [Space, SerializeField, ReadOnly] private float _currentHealth;
 
     protected bool IsDead => _currentHealth == 0;
@@ -38,8 +39,18 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     public event Action<EnemyController> OnPoolableDespawnNeeded;
     private CancellationTokenSource _cancellationTokenSource;
     private CancellationTokenSource _cancellationTokenSource2;
-    public void Initialize(EnemySO enemySO)
-    { 
+    private void Awake()
+    {
+        _collider = GetComponent<Collider2D>(); 
+    }
+    private void Update()
+    {
+        _currentState.OnStateUpdate(this);
+    }
+    public void Initialize(EnemySO enemySO, Transform targetFollow, Transform targetHit)
+    {
+        Target = targetFollow;
+        TargetToHit = targetHit;
         _enemySO = enemySO;
         _collider.enabled = true;
         _currentHealth = _enemySO.Health;
@@ -69,11 +80,6 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         GoToMovingState<InerceState>();
         _collider.enabled = false;
         _spriteRenderer.color = Color.white;
-    }
-
-    public void AttackFinished()
-    {
-
     }
     public void GoToState<T>() where T : NormalStates
     {
@@ -170,6 +176,5 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     {
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource2?.Cancel();
-
     }
 }

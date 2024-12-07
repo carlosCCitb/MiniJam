@@ -6,14 +6,13 @@ using UnityEngine;
 public class RangedEnemy : EnemyController
 {
     [SerializeField] private Shooter _shooter;
-
     CancellationTokenSource _cancellationTokenSource = new();
 
     private void OnEnable()
     {
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource = new();
-
+        AttackRange = _enemySO.Range + _enemySO.Offset;
         ShootAsync().Forget();
     }
 
@@ -49,7 +48,6 @@ public class RangedEnemy : EnemyController
             await UniTask.Delay(TimeSpan.FromSeconds(_enemySO.Coldown), cancellationToken: _cancellationTokenSource.Token);
         }
     }
-
     private void OnDestroy()
     {
         _cancellationTokenSource?.Dispose();

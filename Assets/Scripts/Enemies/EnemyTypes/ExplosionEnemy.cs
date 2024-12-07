@@ -2,6 +2,11 @@ using UnityEngine;
 public class ExplosionEnemy : EnemyController
 {
     [SerializeField] private LayerMask _layersToApplyExplosionForces;
+    private void Awake()
+    {
+        TargetToHit = Target;
+        AttackRange = _enemySO.Range;
+    }
     private void LateUpdate()
     {
         Quaternion lookRotation = Quaternion.Euler(new Vector3(0f, 0f, AngleBetweenPoints(transform.position, Target.position) + 90.0f));
