@@ -14,6 +14,9 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     }
     public void ChangeSkin(int i)
     {
+        if (_currentSkin == i)
+            return;
+
         MeteorSkins[_currentSkin].SetActive(false);
 
         if(_currentSkin+5<MeteorSkins.Count)

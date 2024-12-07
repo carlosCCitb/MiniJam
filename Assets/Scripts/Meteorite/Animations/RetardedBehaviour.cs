@@ -1,5 +1,8 @@
 using UnityEngine;
 using System.Reflection;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using System;
 public class RetardedBehaviour : MonoBehaviour
 {
     public GameObject Pole;
@@ -11,6 +14,9 @@ public class RetardedBehaviour : MonoBehaviour
     private float[] weights;
     public Transform PointUp, PointDown;
     public GameObject empty;
+
+    CancellationTokenSource _cancellationTokenSource;
+
     private void Awake()
     {
         //transform.localScale = Pole.transform.localScale;
@@ -32,14 +38,38 @@ public class RetardedBehaviour : MonoBehaviour
            sr.enabled = false;
         }
     }
-    private void Update()
+
+    private void OnEnable()
+    {
+        _cancellationTokenSource = new();
+        LateUpdateAsync().Forget();
+    }
+
+    private void OnDisable()
+    {
+        _cancellationTokenSource.Cancel();
+    }
+
+    private void LateUpdate()
     {
         for (int i = 1; i < gameObjectsChildren.Length; i++)
         {
-            Lastpositions[i] = gameObjectsChildren[i].transform.position;
-            gameObjectsGrandChildren[i].transform.localPosition = gameObjectsToSwap[i].transform.localPosition 
+            gameObjectsGrandChildren[i].transform.localPosition = gameObjectsToSwap[i].transform.localPosition
                 + Vector3.up * ToSwap.transform.localPosition.y;
             gameObjectsChildren[i].transform.position = Vector2.Lerp(Pole.transform.position, Lastpositions[i], weights[i]);
+        }
+    }
+
+    private async UniTaskVoid LateUpdateAsync()
+    {
+        while (enabled)
+        {
+            for (int i = 1; i < gameObjectsChildren.Length; i++)
+            {
+                Lastpositions[i] = gameObjectsChildren[i].transform.position;
+            }
+
+            await UniTask.Delay(TimeSpan.FromSeconds(1.0f / 30.0f), delayTiming: PlayerLoopTiming.PostLateUpdate, cancellationToken: _cancellationTokenSource.Token);
         }
     }
     public static T CopyComponent<T>(T original, GameObject destination) where T : Component
@@ -65,4 +95,8 @@ public class RetardedBehaviour : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        _cancellationTokenSource?.Dispose();
+    }
 }
