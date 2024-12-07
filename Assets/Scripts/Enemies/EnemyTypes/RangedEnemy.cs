@@ -37,12 +37,6 @@ public class RangedEnemy : EnemyController
         else           
             GoToMovingState<OrbitState>();
     }
-    public override void DeadBehaviour()
-    {
-        GoToState<DeathState>();
-        GoToMovingState<InerceState>();
-    }
-
     private async UniTaskVoid ShootAsync()
     {
         await UniTask.WaitUntil(() => Vector3.Distance(transform.position, Target.position) <= _enemySO.Range, cancellationToken: _cancellationTokenSource.Token);

@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using NaughtyAttributes;
+using Cysharp.Threading.Tasks;
+using System.Threading;
 
 public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, EnemyController.Type, EnemyController>.IPoolable, IDamageable
 {
@@ -21,29 +23,32 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected EnemySO _enemySO;
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     public Transform Target;
+    [SerializeField] private Color RedColor;
+    private Collider2D _collider;
 
     [Space, SerializeField, ReadOnly] private float _currentHealth;
 
     protected bool IsDead => _currentHealth == 0;
+    [SerializeField] private float _deathTime;
 
     public Type PoolableType => _type;
 
     public GameObject PoolableGameObject => gameObject;
 
     public event Action<EnemyController> OnPoolableDespawnNeeded;
-
+    private CancellationTokenSource _cancellationTokenSource;
+    private CancellationTokenSource _cancellationTokenSource2;
     public void Initialize(EnemySO enemySO)
     { 
         _enemySO = enemySO;
-
+        _collider.enabled = true;
         _currentHealth = _enemySO.Health;
+        transform.localScale = new Vector3(1, 1, 1);
     }
-
     public EnemySO GetEnemySo()
     {
         return _enemySO;
     }
-
     public void SetNextDirection()
     {
 
@@ -56,7 +61,16 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     {
 
     }
-    public abstract void DeadBehaviour();
+    public void DeadBehaviour()
+    {
+        _cancellationTokenSource?.Cancel();
+        _cancellationTokenSource = new();
+        DeathAsync().Forget();
+        GoToMovingState<InerceState>();
+        _collider.enabled = false;
+        _spriteRenderer.color = Color.white;
+    }
+
     public void AttackFinished()
     {
 
@@ -81,24 +95,81 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     }
 
     protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
-
     protected void DoDamage(Rigidbody2D rigidbody)
     {
         if (rigidbody.TryGetComponent(out IDamageable damageable))
             damageable.OnHurt(_enemySO.Damage);
     }
-
+    [Button]
+    public void Hurty()
+    {
+        _cancellationTokenSource2?.Cancel();
+        _cancellationTokenSource2 = new();
+        OnHurtAsync().Forget();
+    }
     public void OnHurt(int Damage)
     {
         _currentHealth -= Damage;
         Mathf.Max(_currentHealth, 0);
-
+        _cancellationTokenSource2?.Cancel();
+        _cancellationTokenSource2 = new();
+        OnHurtAsync().Forget();
         if (_currentHealth == 0)
             OnDie();
     }
-
     public void OnDie()
     {
-        Debug.Log("TODO: enemy dead");
+        GoToState<DeathState>();
+    }
+    private async UniTaskVoid DeathAsync()
+    {
+        int times = 30;
+        float timePart = _deathTime / (float)times;
+        for (int i = 0; i < times; i++)
+        {
+            var factor = i * timePart / _deathTime;
+            _spriteRenderer.color = Color.Lerp(Color.white, Color.black, factor);
+            transform.localScale = Vector3.Lerp(new Vector3(1, 1, 1), Vector3.zero, factor);
+            await UniTask.WaitForSeconds(timePart, cancellationToken: _cancellationTokenSource.Token);
+        }
+        RequestDespawn();
+    }
+    private async UniTaskVoid OnHurtAsync()
+    {
+        float blinkDuration = 0.16f;
+        float time = 0;
+        int Times = 2;
+        for(int i=0; i< Times; i++)
+        {
+            time = 0;
+            while(time < blinkDuration)
+            {
+                _spriteRenderer.color = Color.Lerp(Color.white, RedColor, time/blinkDuration);
+                await UniTask.Yield(cancellationToken: _cancellationTokenSource2.Token);
+                time += Time.deltaTime;
+            }
+            time = 0;
+            while (time < blinkDuration)
+            {
+                _spriteRenderer.color = Color.Lerp(RedColor, Color.white, time/blinkDuration);
+                await UniTask.Yield(cancellationToken: _cancellationTokenSource2.Token);
+                time += Time.deltaTime;
+            }
+            _spriteRenderer.color = Color.white;
+
+        }
+        RequestDespawn();
+    }
+    private void OnDestroy()
+    {
+        _cancellationTokenSource?.Dispose();
+        _cancellationTokenSource2?.Dispose();
+
+    }
+    private void OnDisable()
+    {
+        _cancellationTokenSource?.Cancel();
+        _cancellationTokenSource2?.Cancel();
+
     }
 }
