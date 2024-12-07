@@ -15,6 +15,10 @@ public class PathManager : MonoBehaviour
     [BoxGroup("Background values"), SerializeField] private SpriteRenderer _clouds;
     [BoxGroup("Background values"), SerializeField] private Color _redColor;
 
+    [Space]
+    [BoxGroup("UI"), SerializeField] private RectTransform _pointerTransform;
+    [BoxGroup("UI"), SerializeField] private RectTransform _progressBarTransform;
+
     public void AddDisplacement(float currentSpeed, Vector2 minMaxSpeed, float dt)
     {
         float factor = 1.0f - Mathf.InverseLerp(minMaxSpeed.x, minMaxSpeed.y, currentSpeed);
@@ -26,6 +30,8 @@ public class PathManager : MonoBehaviour
 
         ApplyMountainDisplacement();
         ApplyMountainColoring();
+
+        _pointerTransform.position = new(_pointerTransform.position.x, Mathf.Lerp(_progressBarTransform.position.y + _progressBarTransform.rect.max.y, _progressBarTransform.position.y + _progressBarTransform.rect.min.y, _currentDistance / _totalDistanceToTravel), _pointerTransform.position.z);
     }
 
     private void ApplyMountainDisplacement()
