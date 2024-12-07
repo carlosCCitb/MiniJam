@@ -34,8 +34,12 @@ public class Prop : MonoBehaviour, Pool<Prop, Prop.Type, Prop[]>.IPoolable
 
     public event Action<Prop> OnPoolableDespawnNeeded;
 
+    public static float Speed = 1.0f;
+
     private void Update()
     {
+        transform.position += Speed * Time.deltaTime * Vector3.up;
+
         if (_shouldRotate)
             transform.rotation *= Quaternion.Euler(0, 0, _angularRotation * Time.deltaTime * (_clockwise ? 1 : -1));
 

@@ -1,12 +1,38 @@
+using AYellowpaper.SerializedCollections;
 using NaughtyAttributes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PathManager : MonoBehaviour
 {
+    [Serializable]
+    private struct MetersAndLevelEnemySpawn
+    {
+        public float meters;
+        public int level;
+    }
+
+    [Serializable]
+    private struct LayerAndProps
+    {
+        public Vector2 minMaxDistance;
+        public Prop.Type[] props;
+    }
+
     [SerializeField] private float _totalDistanceToTravel; // m
     [SerializeField, ReadOnly] private float _currentDistance; // m
 
     [Space, SerializeField] private Vector2 _minMaxMeteoriteSpeed; // m/s
+
+    [Space, SerializeField] private EnemySpawner _enemySpawner;
+    [SerializeField] private MetersAndLevelEnemySpawn[] _enemySpawnTimes;
+
+    [Space, SerializeField] private PropSpawner _propSpawner;
+    [SerializeField] private LayerAndProps[] _layersAndProps;
+    [SerializeField] private Vector2 _minMaxDistanceToSpawnNextProp;
 
     [Space]
     [BoxGroup("Background values"), SerializeField] private Transform _backgroundTransform;
@@ -19,6 +45,18 @@ public class PathManager : MonoBehaviour
     [Space]
     [BoxGroup("UI"), SerializeField] private RectTransform _pointerTransform;
     [BoxGroup("UI"), SerializeField] private RectTransform _progressBarTransform;
+
+    private int _currentMetersAndLevelEnemySpawnIndex;
+    private MetersAndLevelEnemySpawn? _currentMetersAndLevelEnemySpawn;
+    
+    private float _lastPropSpawnedDistance;
+    private float _distanceToSpawnNextProp;
+
+    private void Awake()
+    {
+        RefreshCurrentMetersAndLevelEnemySpawn();
+        RefreshPropSpawnValues();
+    }
 
     public void AddDisplacement(float currentSpeed, Vector2 minMaxSpeed, float dt)
     {
@@ -33,6 +71,41 @@ public class PathManager : MonoBehaviour
         ApplyMountainColoring();
 
         _pointerTransform.position = new(_pointerTransform.position.x, Mathf.Lerp(_progressBarTransform.position.y + _progressBarTransform.rect.max.y, _progressBarTransform.position.y + _progressBarTransform.rect.min.y, _currentDistance / _totalDistanceToTravel), _pointerTransform.position.z);
+
+        if (_currentMetersAndLevelEnemySpawn != null && _currentDistance > _currentMetersAndLevelEnemySpawn.Value.meters)
+        {
+            _enemySpawner.Spawn(_currentMetersAndLevelEnemySpawn.Value.level);
+            RefreshCurrentMetersAndLevelEnemySpawn();
+        }
+
+        if (_currentDistance - _lastPropSpawnedDistance > _distanceToSpawnNextProp)
+        { 
+            LayerAndProps layerAndProps = _layersAndProps.Where(x => _currentDistance > x.minMaxDistance.x && _currentDistance < x.minMaxDistance.y).FirstOrDefault();
+
+            if (layerAndProps.props.Length == 0) // Didn't find any layerAndProps valid value and returned default
+                return;
+
+            _propSpawner.Spawn(layerAndProps.props[Random.Range(0, layerAndProps.props.Length)]);
+            RefreshPropSpawnValues();
+        }
+    }
+
+    private void RefreshCurrentMetersAndLevelEnemySpawn()
+    {
+        if (_enemySpawnTimes.Length <= _currentMetersAndLevelEnemySpawnIndex)
+        {
+            _currentMetersAndLevelEnemySpawn = null;
+            return;
+        }
+
+        _currentMetersAndLevelEnemySpawn = _enemySpawnTimes[_currentMetersAndLevelEnemySpawnIndex];
+        ++_currentMetersAndLevelEnemySpawnIndex;
+    }
+
+    private void RefreshPropSpawnValues()
+    {
+        _lastPropSpawnedDistance = _currentDistance;
+        _distanceToSpawnNextProp = Random.Range(_minMaxDistanceToSpawnNextProp.x , _minMaxDistanceToSpawnNextProp.y);
     }
 
     private void ApplyMountainDisplacement()

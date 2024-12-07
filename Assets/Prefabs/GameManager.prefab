@@ -123,7 +123,11 @@ MonoBehaviour:
   _typePerValueDic:
     _serializedList:
     - Key: 0
-      Value: {fileID: 0}
+      Value: {fileID: 595717216718969567, guid: 2fbbee720caec6e4296701e6763541ea, type: 3}
+    - Key: 1
+      Value: {fileID: 4303533447681690435, guid: 48500a4afaa75984fa1f1ed1eddb9b40, type: 3}
+    - Key: 2
+      Value: {fileID: 6701922297560298901, guid: e281b9afff16f0a4cb663c48aa8da5c2, type: 3}
   _value: {fileID: 0}
 --- !u!114 &9214423059588255063
 MonoBehaviour:

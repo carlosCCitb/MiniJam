@@ -1739,9 +1739,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10126ed0a0ffd6142b0a104b878e065b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _totalDistanceToTravel: 15000
+  _totalDistanceToTravel: 50000
   _currentDistance: 0
   _minMaxMeteoriteSpeed: {x: 10, y: 275}
+  _enemySpawner: {fileID: 4750862063868453855}
+  _enemySpawnTimes:
+  - meters: 2500
+    level: 1
+  - meters: 5000
+    level: 1
+  _propSpawner: {fileID: 1147147435}
+  _layersAndProps:
+  - minMaxDistance: {x: 0, y: 5000}
+    props: 01000000
+  - minMaxDistance: {x: 5001, y: 10000}
+    props: 0100000000000000
+  - minMaxDistance: {x: 10001, y: 20000}
+    props: 00000000
+  _minMaxDistanceToSpawnNextProp: {x: 1000, y: 5000}
   _backgroundTransform: {fileID: 138217256}
   _backgroundTotalDisplacement: 145
   _mountains:
@@ -2345,6 +2360,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3954471907789708021, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
   m_PrefabInstance: {fileID: 4750862063868453853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4750862063868453855 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
+  m_PrefabInstance: {fileID: 4750862063868453853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267b2f573c374014fb94031e838db1be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8436743756105956713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2406,8 +2432,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1629336397}
   - {fileID: 8436743756105956713}
+  - {fileID: 621685968}
+  - {fileID: 1629336397}
   - {fileID: 1508293013}
   - {fileID: 1701985733}
-  - {fileID: 621685968}

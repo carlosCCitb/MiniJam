@@ -175,24 +175,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waves:
     _serializedList:
-    - Key: 0
+    - Key: 1
       Value:
-      - name: Wave 4 rangeds
+      - name: Wave 4 corner exploding
         spawnDatas:
-        - name: Ranged up left
-          enemyType: 0
+        - name: Exploding up left
+          enemyType: 2
           enemyData: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
           spawningTransform: {fileID: 1553207425576340778}
-        - name: Ranged up right
-          enemyType: 0
+        - name: Exploding up right
+          enemyType: 2
           enemyData: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
           spawningTransform: {fileID: 6686274719443238528}
-        - name: Ranged down left
-          enemyType: 0
+        - name: Exploding down left
+          enemyType: 2
           enemyData: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
           spawningTransform: {fileID: 6806388841699696998}
-        - name: Ranged down right
-          enemyType: 0
+        - name: Exploding down right
+          enemyType: 2
           enemyData: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
           spawningTransform: {fileID: 6714031152218568528}
 --- !u!1 &6394576512484949996
