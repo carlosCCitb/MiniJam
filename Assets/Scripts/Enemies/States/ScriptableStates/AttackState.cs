@@ -5,9 +5,7 @@ public class AttackState : NormalStates
 {
     public override void OnStateEnter(EnemyController enemyController)
     {
-        Debug.Log("SET");
         enemyController.gameObject.GetComponentInChildren<Animator>().SetBool("Attack", true);
-        Debug.Log("SET true");
     }
 
     public override void OnStateExit(EnemyController enemyController)
@@ -23,5 +21,6 @@ public class AttackState : NormalStates
             enemyController.GoToState<FallingState>();
             enemyController.GoToMovingState<ChaseState>();
         }
+        Debug.Log("Attack");
     }
 }

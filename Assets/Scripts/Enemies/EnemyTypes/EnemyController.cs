@@ -25,7 +25,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     public Transform Target;
     public Transform TargetToHit;
     [SerializeField] private Color RedColor;
-    private Collider2D _collider;
+    [SerializeField] private Collider2D _collider;
     public float AttackRange;
     [Space, SerializeField, ReadOnly] private float _currentHealth;
 
@@ -39,10 +39,6 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     public event Action<EnemyController> OnPoolableDespawnNeeded;
     private CancellationTokenSource _cancellationTokenSource;
     private CancellationTokenSource _cancellationTokenSource2;
-    private void Awake()
-    {
-        _collider = GetComponent<Collider2D>(); 
-    }
     private void Update()
     {
         _currentState.OnStateUpdate(this);
