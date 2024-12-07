@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Deep_Sea_Wall_Left_0: 497787304205557379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
