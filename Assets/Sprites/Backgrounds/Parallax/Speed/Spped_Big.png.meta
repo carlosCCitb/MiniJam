@@ -1,0 +1,1978 @@
+fileFormatVersion: 2
+guid: c933b487f4924a14495e70a70e97edf2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1657926727223833924
+    second: Spped_Big_0
+  - first:
+      213: -6455998477336904893
+    second: Spped_Big_1
+  - first:
+      213: 8608055184769989447
+    second: Spped_Big_2
+  - first:
+      213: -8456712494764135140
+    second: Spped_Big_3
+  - first:
+      213: 6192311859931781901
+    second: Spped_Big_4
+  - first:
+      213: -4886750938803753795
+    second: Spped_Big_5
+  - first:
+      213: 3841111801380574484
+    second: Spped_Big_6
+  - first:
+      213: 1282068682657078065
+    second: Spped_Big_7
+  - first:
+      213: -7201862675162084550
+    second: Spped_Big_8
+  - first:
+      213: -6315766649239003716
+    second: Spped_Big_9
+  - first:
+      213: 94488170469978455
+    second: Spped_Big_10
+  - first:
+      213: 757993829646802228
+    second: Spped_Big_11
+  - first:
+      213: 7641159755247977079
+    second: Spped_Big_12
+  - first:
+      213: -2290104408757863629
+    second: Spped_Big_13
+  - first:
+      213: -800557044242025073
+    second: Spped_Big_14
+  - first:
+      213: -8345156577247671993
+    second: Spped_Big_15
+  - first:
+      213: -132513573086959288
+    second: Spped_Big_16
+  - first:
+      213: 8966607443223737806
+    second: Spped_Big_17
+  - first:
+      213: -6238986239722534219
+    second: Spped_Big_18
+  - first:
+      213: -4362523897636676600
+    second: Spped_Big_19
+  - first:
+      213: -3686334974011807904
+    second: Spped_Big_20
+  - first:
+      213: -1482529169183974947
+    second: Spped_Big_21
+  - first:
+      213: 4145243991258355164
+    second: Spped_Big_22
+  - first:
+      213: 3416301822207128424
+    second: Spped_Big_23
+  - first:
+      213: -6237803473572750803
+    second: Spped_Big_24
+  - first:
+      213: -5059172325851715775
+    second: Spped_Big_25
+  - first:
+      213: 2512945643575438425
+    second: Spped_Big_26
+  - first:
+      213: -201475263985796661
+    second: Spped_Big_27
+  - first:
+      213: -5596615416080604164
+    second: Spped_Big_28
+  - first:
+      213: -2357141663819201774
+    second: Spped_Big_29
+  - first:
+      213: 1162146219893551433
+    second: Spped_Big_30
+  - first:
+      213: -1565167609130934136
+    second: Spped_Big_31
+  - first:
+      213: 6301923623840215470
+    second: Spped_Big_32
+  - first:
+      213: 2531420912692944781
+    second: Spped_Big_33
+  - first:
+      213: -1774828923166998304
+    second: Spped_Big_34
+  - first:
+      213: -7365913177638167172
+    second: Spped_Big_35
+  - first:
+      213: 1721014324672274352
+    second: Spped_Big_36
+  - first:
+      213: 4616984216141481953
+    second: Spped_Big_37
+  - first:
+      213: 2009748013059908231
+    second: Spped_Big_38
+  - first:
+      213: 1178660927941934031
+    second: Spped_Big_39
+  - first:
+      213: -5658322273201117606
+    second: Spped_Big_40
+  - first:
+      213: 3261552385256031699
+    second: Spped_Big_41
+  - first:
+      213: -8758629492559857362
+    second: Spped_Big_42
+  - first:
+      213: 3832331390704898294
+    second: Spped_Big_43
+  - first:
+      213: 3647595231946748008
+    second: Spped_Big_44
+  - first:
+      213: -8847141563416685430
+    second: Spped_Big_45
+  - first:
+      213: -2640136629133827112
+    second: Spped_Big_46
+  - first:
+      213: -3653225437031944659
+    second: Spped_Big_47
+  - first:
+      213: 304009863569065745
+    second: Spped_Big_48
+  - first:
+      213: -4966917667656315590
+    second: Spped_Big_49
+  - first:
+      213: -2913633580987681978
+    second: Spped_Big_50
+  - first:
+      213: 4652435698000894222
+    second: Spped_Big_51
+  - first:
+      213: -1606533780744121617
+    second: Spped_Big_52
+  - first:
+      213: 3082298213064721119
+    second: Spped_Big_53
+  - first:
+      213: 3805506444238429377
+    second: Spped_Big_54
+  - first:
+      213: 6920458767297085459
+    second: Spped_Big_55
+  - first:
+      213: 6911640241268453594
+    second: Spped_Big_56
+  - first:
+      213: -6084939198086183769
+    second: Spped_Big_57
+  - first:
+      213: -6400507308549924865
+    second: Spped_Big_58
+  - first:
+      213: -6009759801674348336
+    second: Spped_Big_59
+  - first:
+      213: 3139936543634494482
+    second: Spped_Big_60
+  - first:
+      213: 6482035218321680289
+    second: Spped_Big_61
+  - first:
+      213: 3651639746587092217
+    second: Spped_Big_62
+  - first:
+      213: -564995287155314021
+    second: Spped_Big_63
+  - first:
+      213: -2039190431679723383
+    second: Spped_Big_64
+  - first:
+      213: -830928174132204467
+    second: Spped_Big_65
+  - first:
+      213: 8034413598663291011
+    second: Spped_Big_66
+  - first:
+      213: 6248807811862047555
+    second: Spped_Big_67
+  - first:
+      213: -7774201642396775423
+    second: Spped_Big_68
+  - first:
+      213: -7445126237089182859
+    second: Spped_Big_69
+  - first:
+      213: 9025638417990254661
+    second: Spped_Big_70
+  - first:
+      213: -9059836219020553285
+    second: Spped_Big_71
+  - first:
+      213: -6060161128739572799
+    second: Spped_Big_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spped_Big_0
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2000
+        width: 12
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4457dc70393220710800000000000000
+      internalID: 1657926727223833924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1651
+        width: 11
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bfed7179fa766a0800000000000000
+      internalID: -6455998477336904893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_2
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1925
+        width: 11
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bbc274594f57770800000000000000
+      internalID: 8608055184769989447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_3
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2000
+        width: 12
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1de9f5aac8b3aa80800000000000000
+      internalID: -8456712494764135140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2123
+        width: 12
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b1cad04d28fe550800000000000000
+      internalID: 6192311859931781901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_5
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 1952
+        width: 16
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcabca89e5ce2cb0800000000000000
+      internalID: -4886750938803753795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_6
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1603
+        width: 11
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41599df05de5e4530800000000000000
+      internalID: 3841111801380574484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_7
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 2144
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b9d679ca2dac110800000000000000
+      internalID: 1282068682657078065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_8
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1652
+        width: 12
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bc1d5dd08dd0c90800000000000000
+      internalID: -7201862675162084550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_9
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 2153
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd99d3e1b3e958a0800000000000000
+      internalID: -6315766649239003716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_10
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1877
+        width: 11
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751f65c8d70bf4100800000000000000
+      internalID: 94488170469978455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_11
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1960
+        width: 12
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d190e3f5fe48a00800000000000000
+      internalID: 757993829646802228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_12
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2075
+        width: 12
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7720193105ada0a60800000000000000
+      internalID: 7641159755247977079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_13
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1359
+        width: 12
+        height: 801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b7e697c2ae730e0800000000000000
+      internalID: -2290104408757863629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_14
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 2120
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85748b1c99d3e4f0800000000000000
+      internalID: -800557044242025073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_15
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1941
+        width: 11
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749432abe4c003c80800000000000000
+      internalID: -8345156577247671993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_16
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 1676
+        width: 11
+        height: 484
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849eb3c7b97392ef0800000000000000
+      internalID: -132513573086959288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_17
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 2096
+        width: 12
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec579b566f9cf6c70800000000000000
+      internalID: 8966607443223737806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_18
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 1604
+        width: 12
+        height: 556
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bac9ce021baa69a0800000000000000
+      internalID: -6238986239722534219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_19
+      rect:
+        serializedVersion: 2
+        x: 2964
+        y: 1703
+        width: 12
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c9635f0a33573c0800000000000000
+      internalID: -4362523897636676600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_20
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 1912
+        width: 12
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0676de64fd187dcc0800000000000000
+      internalID: -3686334974011807904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_21
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 1898
+        width: 12
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd952ad439ffc6be0800000000000000
+      internalID: -1482529169183974947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_22
+      rect:
+        serializedVersion: 2
+        x: 3357
+        y: 522
+        width: 12
+        height: 1638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5d646927dd68930800000000000000
+      internalID: 4145243991258355164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_23
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 1628
+        width: 11
+        height: 532
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863fc2e2864296f20800000000000000
+      internalID: 3416301822207128424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_24
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 717
+        width: 12
+        height: 1443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a9ff24acede69a0800000000000000
+      internalID: -6237803473572750803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_25
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 867
+        width: 12
+        height: 996
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1472f1403953ac9b0800000000000000
+      internalID: -5059172325851715775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_26
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1078
+        width: 11
+        height: 891
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ced29afb6cfd220800000000000000
+      internalID: 2512945643575438425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_27
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 819
+        width: 12
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9391b9057343df0800000000000000
+      internalID: -201475263985796661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_28
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 470
+        width: 11
+        height: 821
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf36a046ee3d452b0800000000000000
+      internalID: -5596615416080604164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1020
+        width: 12
+        height: 930
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21388ca3520c94fd0800000000000000
+      internalID: -2357141663819201774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_30
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 744
+        width: 11
+        height: 843
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94171d564d5c02010800000000000000
+      internalID: 1162146219893551433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_31
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 942
+        width: 12
+        height: 906
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880adc32a58674ae0800000000000000
+      internalID: -1565167609130934136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_32
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 808
+        width: 11
+        height: 1049
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea173a8952ee47750800000000000000
+      internalID: 6301923623840215470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_33
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 434
+        width: 12
+        height: 802
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fde0678e9612320800000000000000
+      internalID: 2531420912692944781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_34
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 963
+        width: 12
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0ca817f7a8e57e0800000000000000
+      internalID: -1774828923166998304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_35
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 471
+        width: 12
+        height: 975
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d1280cdf407c990800000000000000
+      internalID: -7365913177638167172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_36
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 1149
+        width: 12
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf1373f86542e710800000000000000
+      internalID: 1721014324672274352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_37
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 779
+        width: 12
+        height: 751
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7c2b8cea2d21040800000000000000
+      internalID: 4616984216141481953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_38
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 939
+        width: 12
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782ab767b2f04eb10800000000000000
+      internalID: 2009748013059908231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_39
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 1176
+        width: 12
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb7c908ed17b5010800000000000000
+      internalID: 1178660927941934031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_40
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 495
+        width: 11
+        height: 916
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56aa212fd99971b0800000000000000
+      internalID: -5658322273201117606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_41
+      rect:
+        serializedVersion: 2
+        x: 2907
+        y: 386
+        width: 12
+        height: 802
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5838b2d9c534d20800000000000000
+      internalID: 3261552385256031699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_42
+      rect:
+        serializedVersion: 2
+        x: 2964
+        y: 0
+        width: 12
+        height: 1226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29b5b8b1e8137680800000000000000
+      internalID: -8758629492559857362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_43
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 1019
+        width: 11
+        height: 786
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f05b84681d2f2530800000000000000
+      internalID: 3832331390704898294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_44
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 0
+        width: 12
+        height: 1236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8603894a98cde9230800000000000000
+      internalID: 3647595231946748008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_45
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 12
+        height: 827
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8454fa4f93a83580800000000000000
+      internalID: -8847141563416685430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_46
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 0
+        width: 11
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d32bfd49b95c5bd0800000000000000
+      internalID: -2640136629133827112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_47
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 95
+        width: 12
+        height: 930
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e2a4512d22d4dc0800000000000000
+      internalID: -3653225437031944659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_48
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 0
+        width: 11
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117cf363c5f083400800000000000000
+      internalID: 304009863569065745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_49
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 0
+        width: 12
+        height: 890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3dcbb672b6f11bb0800000000000000
+      internalID: -4966917667656315590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_50
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 17
+        width: 12
+        height: 906
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6437497f1b1b097d0800000000000000
+      internalID: -2913633580987681978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_51
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 105
+        width: 11
+        height: 891
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0990bf1e95c09040800000000000000
+      internalID: 4652435698000894222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_52
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 0
+        width: 16
+        height: 932
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2d417c90274b9e0800000000000000
+      internalID: -1606533780744121617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_53
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 0
+        width: 11
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd24b81e4e586ca20800000000000000
+      internalID: 3082298213064721119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_54
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 38
+        width: 12
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc9a47d2ffdfc430800000000000000
+      internalID: 3805506444238429377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_55
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 0
+        width: 12
+        height: 521
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3100b7b25986a0060800000000000000
+      internalID: 6920458767297085459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_56
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 47
+        width: 12
+        height: 930
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0f9141e241bef50800000000000000
+      internalID: 6911640241268453594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_57
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 0
+        width: 11
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4093ae904fd8ba0800000000000000
+      internalID: -6084939198086183769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_58
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 224
+        width: 12
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff71793a384dc27a0800000000000000
+      internalID: -6400507308549924865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_59
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 0
+        width: 12
+        height: 605
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d847cb2d4b099ca0800000000000000
+      internalID: -6009759801674348336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_60
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 12
+        height: 875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2141a9c76ab439b20800000000000000
+      internalID: 3139936543634494482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_61
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 14
+        width: 12
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7a2a110b0d4f950800000000000000
+      internalID: 6482035218321680289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_62
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 0
+        width: 11
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f46507900b3da230800000000000000
+      internalID: 3651639746587092217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_63
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 251
+        width: 12
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b927651a7cbb828f0800000000000000
+      internalID: -564995287155314021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_64
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 0
+        width: 11
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988ca524b1753b3e0800000000000000
+      internalID: -2039190431679723383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_65
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 0
+        width: 12
+        height: 653
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c6cf26a33f774f0800000000000000
+      internalID: -830928174132204467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_66
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 0
+        width: 12
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380b4ee8998ff7f60800000000000000
+      internalID: 8034413598663291011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_67
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 94
+        width: 11
+        height: 786
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b29b7e89938b650800000000000000
+      internalID: 6248807811862047555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_68
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 176
+        width: 12
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c8ea4bbcc7c1490800000000000000
+      internalID: -7774201642396775423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_69
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 0
+        width: 12
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bcb5222299da890800000000000000
+      internalID: -7445126237089182859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_70
+      rect:
+        serializedVersion: 2
+        x: 3357
+        y: 0
+        width: 12
+        height: 419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5408d6f3252814d70800000000000000
+      internalID: 9025638417990254661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_71
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 203
+        width: 12
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3df0ab5fef44280800000000000000
+      internalID: -9059836219020553285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_72
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 0
+        width: 11
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3f8dfbf8bf5eba0800000000000000
+      internalID: -6060161128739572799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spped_Big_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451ac64d21c7a0d4088f5ec2fffb4215
+      internalID: -585239623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a2af1931e6c2874e8a6785ada2d43c1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spped_Big_73: -585239623
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

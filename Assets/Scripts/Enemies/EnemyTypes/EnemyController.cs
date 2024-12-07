@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using NaughtyAttributes;
 
 public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, EnemyController.Type, EnemyController>.IPoolable, IDamageable
 {
@@ -18,9 +19,10 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected NormalStates _currentState;
     [SerializeField] protected MovementStatesSO _currentMovementState;
     [SerializeField] protected EnemySO _enemySO;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
     public Transform Target;
 
-    private float _currentHealth;
+    [Space, SerializeField, ReadOnly] private float _currentHealth;
 
     protected bool IsDead => _currentHealth == 0;
 
@@ -79,6 +81,12 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     }
 
     protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
+
+    protected void DoDamage(Rigidbody2D rigidbody)
+    {
+        if (rigidbody.TryGetComponent(out IDamageable damageable))
+            damageable.OnHurt(_enemySO.Damage);
+    }
 
     public void OnHurt(int Damage)
     {

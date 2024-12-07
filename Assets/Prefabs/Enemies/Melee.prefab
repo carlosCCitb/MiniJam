@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7824842470708661764}
   - component: {fileID: 6727158808841259205}
   - component: {fileID: 4303533447681690435}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Melee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6727158808841259205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,9 +175,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963139c7bad17a649919c566d813bea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: 0
+  _type: 1
   _nextDestination: {x: 0, y: 0, z: 0}
   _currentState: {fileID: 0}
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   _enemySO: {fileID: 11400000, guid: 4b460f1b92c82584087fa6126730272a, type: 2}
   Target: {fileID: 0}
+  _currentHealth: 0
