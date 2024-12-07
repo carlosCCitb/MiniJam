@@ -90,7 +90,10 @@ MonoBehaviour:
   _enemySO: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
   _spriteRenderer: {fileID: 0}
   Target: {fileID: 0}
+  TargetToHit: {fileID: 0}
   RedColor: {r: 0, g: 0, b: 0, a: 0}
+  _collider: {fileID: 7796026324598852773}
+  AttackRange: 0
   _currentHealth: 0
   _deathTime: 0
   _shooter: {fileID: 543540657002267007}

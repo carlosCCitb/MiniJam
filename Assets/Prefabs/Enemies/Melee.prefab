@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7824842470708661764}
   - component: {fileID: 6727158808841259205}
   - component: {fileID: 4303533447681690435}
+  - component: {fileID: 498037027534277288}
   m_Layer: 9
   m_Name: Melee
   m_TagString: Untagged
@@ -180,5 +181,47 @@ MonoBehaviour:
   _currentState: {fileID: 0}
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   _enemySO: {fileID: 11400000, guid: 4b460f1b92c82584087fa6126730272a, type: 2}
+  _spriteRenderer: {fileID: 0}
   Target: {fileID: 0}
+  TargetToHit: {fileID: 0}
+  RedColor: {r: 0, g: 0, b: 0, a: 0}
+  _collider: {fileID: 498037027534277288}
+  AttackRange: 0
   _currentHealth: 0
+  _deathTime: 0
+--- !u!58 &498037027534277288
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398143631878673987}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5

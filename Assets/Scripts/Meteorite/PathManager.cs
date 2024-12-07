@@ -75,11 +75,11 @@ public class PathManager : MonoBehaviour
 
         _pointerTransform.position = new(_pointerTransform.position.x, Mathf.Lerp(_progressBarTransform.position.y + _progressBarTransform.rect.max.y, _progressBarTransform.position.y + _progressBarTransform.rect.min.y, _currentDistance / _totalDistanceToTravel), _pointerTransform.position.z);
 
-        //if (_currentMetersAndLevelEnemySpawn != null && _currentDistance > _currentMetersAndLevelEnemySpawn.Value.meters)
-        //{
-        //    _enemySpawner.Spawn(_currentMetersAndLevelEnemySpawn.Value.level);
-        //    RefreshCurrentMetersAndLevelEnemySpawn();
-        //}
+        if (_currentMetersAndLevelEnemySpawn != null && _currentDistance > _currentMetersAndLevelEnemySpawn.Value.meters)
+        {
+            _enemySpawner.Spawn(_currentMetersAndLevelEnemySpawn.Value.level);
+            RefreshCurrentMetersAndLevelEnemySpawn();
+        }
 
         if (_currentDistance - _lastPropSpawnedDistance > _distanceToSpawnNextProp)
         { 
