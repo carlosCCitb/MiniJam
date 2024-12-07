@@ -6,7 +6,7 @@ public class EnemyPool : Pool<EnemyController, EnemyController.Type, EnemyContro
     public void Spawn(EnemyController.Type type, EnemySO data, Transform transform)
     {
         SpawnAndGetObject(type, transform.position, transform.rotation)
-            .SetEnemySO(data);
+            .Initialize(data);
     }
 
     protected override EnemyController InstantiateFromValue(EnemyController value)

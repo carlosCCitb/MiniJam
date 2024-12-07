@@ -32,7 +32,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
 
     public event Action<EnemyController> OnPoolableDespawnNeeded;
 
-    public void SetEnemySO(EnemySO enemySO)
+    public void Initialize(EnemySO enemySO)
     { 
         _enemySO = enemySO;
 
