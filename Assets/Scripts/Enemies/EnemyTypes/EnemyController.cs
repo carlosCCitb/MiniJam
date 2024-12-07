@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using NaughtyAttributes;
 
 public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, EnemyController.Type, EnemyController>.IPoolable, IDamageable
 {
@@ -20,7 +21,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected EnemySO _enemySO;
     public Transform Target;
 
-    private float _currentHealth;
+    [Space, SerializeField, ReadOnly] private float _currentHealth;
 
     protected bool IsDead => _currentHealth == 0;
 
