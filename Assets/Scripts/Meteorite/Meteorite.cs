@@ -95,11 +95,11 @@ public class Meteorite : MonoBehaviour, IDamageable
             await UniTask.Delay(TimeSpan.FromSeconds(_shootingCooldown), cancellationToken: _cancellationTokenSource.Token);
         }
     }
-    /*[Button]
-    public void Hurt1()
+    [Button]
+    public void Hurt9()
     {
         OnHurt(9);
-    }*/
+    }
     public void OnHurt(int damage)
     {
         _currentHealthPoints -= damage;

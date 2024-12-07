@@ -13,6 +13,7 @@ public class RetardedBehaviour : MonoBehaviour
     public GameObject empty;
     private void Awake()
     {
+        //transform.localScale = Pole.transform.localScale;
         gameObjectsToSwap = ToSwap.GetComponentsInChildren<Transform>();
         gameObjectsChildren = new GameObject[gameObjectsToSwap.Length];
         gameObjectsGrandChildren = new GameObject[gameObjectsToSwap.Length];
@@ -23,6 +24,7 @@ public class RetardedBehaviour : MonoBehaviour
             gameObjectsChildren[i] = Instantiate(empty, gameObjectsToSwap[i].transform.position, Quaternion.identity, transform);
             gameObjectsGrandChildren[i] = Instantiate(empty);
             gameObjectsGrandChildren[i].transform.parent = gameObjectsChildren[i].transform;
+            gameObjectsChildren[i].transform.localScale = Pole.transform.localScale;
             weights[i] = (gameObjectsChildren[i].transform.position.y - PointDown.position.y) /
                 (PointUp.position.y - PointDown.position.y);
            SpriteRenderer sr = gameObjectsToSwap[i].gameObject.GetComponent<SpriteRenderer>();
@@ -35,7 +37,8 @@ public class RetardedBehaviour : MonoBehaviour
         for (int i = 1; i < gameObjectsChildren.Length; i++)
         {
             Lastpositions[i] = gameObjectsChildren[i].transform.position;
-            gameObjectsGrandChildren[i].transform.localPosition = gameObjectsToSwap[i].transform.position;
+            gameObjectsGrandChildren[i].transform.localPosition = gameObjectsToSwap[i].transform.localPosition 
+                + Vector3.up * ToSwap.transform.localPosition.y;
             gameObjectsChildren[i].transform.position = Vector2.Lerp(Pole.transform.position, Lastpositions[i], weights[i]);
         }
     }
