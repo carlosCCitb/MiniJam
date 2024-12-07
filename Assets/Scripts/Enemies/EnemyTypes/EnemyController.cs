@@ -19,6 +19,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected NormalStates _currentState;
     [SerializeField] protected MovementStatesSO _currentMovementState;
     [SerializeField] protected EnemySO _enemySO;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
     public Transform Target;
 
     [Space, SerializeField, ReadOnly] private float _currentHealth;
