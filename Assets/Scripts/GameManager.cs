@@ -12,11 +12,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private BulletPool _bulletPool;
     [SerializeField] private EnemyPool _enemyPool;
     [SerializeField] private ParticlePool _particlePool;
+    [SerializeField] private PropPool _propPool;
 
     public AudioSourcePool AudioSourcePool => _audioSourcePool;
     public BulletPool BulletPool => _bulletPool;
     public EnemyPool EnemyPool => _enemyPool;
     public ParticlePool ParticlePool => _particlePool;
+    public PropPool PropPool => _propPool;
 
 
 

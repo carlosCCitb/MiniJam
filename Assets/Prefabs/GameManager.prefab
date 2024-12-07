@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1660813418605220402}
   - component: {fileID: 287827321755674039}
   - component: {fileID: 8445393306894526445}
+  - component: {fileID: 9214423059588255063}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MonoBehaviour:
   _bulletPool: {fileID: 1660813418605220402}
   _enemyPool: {fileID: 8445393306894526445}
   _particlePool: {fileID: 287827321755674039}
+  _propPool: {fileID: 9214423059588255063}
 --- !u!114 &8034998824883628406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +125,28 @@ MonoBehaviour:
     - Key: 0
       Value: {fileID: 0}
   _value: {fileID: 0}
+--- !u!114 &9214423059588255063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025207021166210180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5981f329b0f728043a86fa96db18f2c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _typePerValueDic:
+    _serializedList:
+    - Key: 0
+      Value:
+      - {fileID: 6421029237368088556, guid: d9824b7c15d5eb84284f74b30e733bf6, type: 3}
+      - {fileID: 6542227129356367484, guid: 927c6ce45a16d324a8173658c6ded21c, type: 3}
+      - {fileID: 4414963617475969488, guid: 80706619d5107f84186a0b0e6b6ed6b0, type: 3}
+      - {fileID: 4163979727502813316, guid: bb39bedba702c3241aba44cc94d86894, type: 3}
+    - Key: 1
+      Value:
+      - {fileID: 5763428669529656765, guid: 0f05c5da8a1dcef43853b46deab0ff75, type: 3}
+      - {fileID: 5829121529860937994, guid: f7e339e97a7cff342b8ce4a82f41f165, type: 3}
+  _value: []
