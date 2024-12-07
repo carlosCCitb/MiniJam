@@ -26,14 +26,16 @@ public class ExplosionEnemy : EnemyController
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if()
-        GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.Explosion, transform.position);
+        if (collision.gameObject.layer == 8)
+        {
+            GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.Explosion, transform.position);
 
-        DoDamage(collision.rigidbody);
-        ApplyExplosionForces();
+            DoDamage(collision.rigidbody);
+            ApplyExplosionForces();
 
-        GoToState<DeathState>();
-        DeadBehaviour();
+            GoToState<DeathState>();
+            DeadBehaviour();
+        }
     }
 
     private void ApplyExplosionForces()
