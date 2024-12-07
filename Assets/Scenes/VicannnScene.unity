@@ -1323,11 +1323,12 @@ MonoBehaviour:
   _backgroundTransform: {fileID: 138217256}
   _backgroundTotalDisplacement: 145
   _mountains:
-  - {fileID: 1253497646}
-  - {fileID: 718468464}
-  - {fileID: 1176524451}
-  - {fileID: 1183159062}
-  _clouds: {fileID: 828944851}
+  - {fileID: 1253497647}
+  - {fileID: 718468465}
+  - {fileID: 1176524452}
+  - {fileID: 1183159063}
+  _clouds: {fileID: 828944852}
+  _redColor: {r: 0.8, g: 0.4, b: 0.4, a: 1}
 --- !u!1 &1406796492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2304579654955112255, guid: fdd6f9f1ff59c6e4e8d493a30444e600, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3395733356665302701, guid: fdd6f9f1ff59c6e4e8d493a30444e600, type: 3}
       propertyPath: m_Name
       value: Meteorite
