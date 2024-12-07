@@ -13,6 +13,7 @@ public class PathManager : MonoBehaviour
     [BoxGroup("Background values"), SerializeField] private float _backgroundTotalDisplacement;
     [BoxGroup("Background values"), SerializeField] private SpriteRenderer[] _mountains;
     [BoxGroup("Background values"), SerializeField] private SpriteRenderer _clouds;
+    [BoxGroup("Background values"), SerializeField] private Color _initialColor;
     [BoxGroup("Background values"), SerializeField] private Color _redColor;
 
     [Space]
@@ -40,19 +41,20 @@ public class PathManager : MonoBehaviour
 
         float parentPositionY = _mountains[0].transform.parent.position.y;
 
-        if (parentPositionY > -30 && parentPositionY < 2.5)
+        if (parentPositionY > -35 && parentPositionY < 7.5f)
         {
-            float factor = Mathf.InverseLerp(-30, 2.5f, parentPositionY);
-            _clouds.transform.localPosition = new(_clouds.transform.localPosition.x, Mathf.Lerp(30.0f, 2.5f, factor), _clouds.transform.localPosition.z);
+            float factor = Mathf.InverseLerp(-35.0f, 0, parentPositionY);
+            _clouds.transform.localPosition = new(_clouds.transform.localPosition.x, Mathf.Lerp(40.0f, 7.5f, factor), _clouds.transform.localPosition.z);
         }
 
-        if (parentPositionY > -20 && parentPositionY < 0)
+        if (parentPositionY > -27.5f && parentPositionY < 0)
         {
-            float factor = Mathf.InverseLerp(-20, 0, parentPositionY);
+            float factor = Mathf.InverseLerp(-27.5f, 0, parentPositionY);
 
-            _mountains[0].transform.localPosition = new(_mountains[0].transform.localPosition.x, Mathf.Lerp(12.5f, 0.0f, factor), _mountains[0].transform.localPosition.z);
-            _mountains[1].transform.localPosition = new(_mountains[1].transform.localPosition.x, Mathf.Lerp(10.0f, 0.0f, factor), _mountains[1].transform.localPosition.z);
-            _mountains[2].transform.localPosition = new(_mountains[2].transform.localPosition.x, Mathf.Lerp(5.0f, 0.0f, factor), _mountains[2].transform.localPosition.z);
+            _mountains[0].transform.localPosition = new(_mountains[0].transform.localPosition.x, Mathf.Lerp(23.0f, 0.0f, factor), _mountains[0].transform.localPosition.z);
+            _mountains[1].transform.localPosition = new(_mountains[1].transform.localPosition.x, Mathf.Lerp(20.5f, 0.0f, factor), _mountains[1].transform.localPosition.z);
+            _mountains[2].transform.localPosition = new(_mountains[2].transform.localPosition.x, Mathf.Lerp(15.5f, 0.0f, factor), _mountains[2].transform.localPosition.z);
+            _mountains[3].transform.localPosition = new(_mountains[2].transform.localPosition.x, Mathf.Lerp(10.5f, 0.0f, factor), _mountains[2].transform.localPosition.z);
         }
     }
 
@@ -63,7 +65,7 @@ public class PathManager : MonoBehaviour
         if (_clouds.transform.position.y > -10 && _clouds.transform.position.y < 2.5)
         {
             float factor = Mathf.InverseLerp(-10, 2.5f, _clouds.transform.position.y);
-            _clouds.color = Color.Lerp(Color.white, _redColor, factor);
+            _clouds.color = Color.Lerp(_initialColor, _redColor, factor);
         }
 
         foreach (var mountain in _mountains)
