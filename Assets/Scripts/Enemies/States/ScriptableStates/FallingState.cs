@@ -5,6 +5,7 @@ public class FallingState : NormalStates
 {
     public override void OnStateEnter(EnemyController enemyController)
     {
+        enemyController.GetComponentInChildren<Animator>().SetBool("Attack", false);
     }
 
     public override void OnStateExit(EnemyController enemyController)
@@ -18,5 +19,6 @@ public class FallingState : NormalStates
         {
             enemyController.GoToState<AttackState>();
         }
+        Debug.Log("Idle");
     }
 }
