@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class MeleeEnemy : EnemyController
 {
+    private void Awake()
+    {
+        TargetToHit = Target;
+        AttackRange = _enemySO.Range;
+    }
     private void FixedUpdate()
     {
         _currentMovementState.OnStateUpdate(this);

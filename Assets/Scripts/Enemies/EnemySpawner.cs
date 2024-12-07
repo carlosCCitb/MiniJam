@@ -38,6 +38,7 @@ public class EnemySpawner : MonoBehaviour
         Wave wave = waves[Random.Range(0, waves.Length)];
 
         foreach (var spawnData in wave.spawnDatas)
-            GameManager.Instance.EnemyPool.Spawn(spawnData.enemyType, spawnData.enemyData, spawnData.spawningTransform);
+            GameManager.Instance.EnemyPool.Spawn(spawnData.enemyType, spawnData.enemyData, spawnData.spawningTransform,
+                transform, transform); //cambiar
     }
 }

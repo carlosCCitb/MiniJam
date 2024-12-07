@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class EnemyPool : Pool<EnemyController, EnemyController.Type, EnemyController>
 {
-    public void Spawn(EnemyController.Type type, EnemySO data, Transform transform)
+    public void Spawn(EnemyController.Type type, EnemySO data, Transform transform,
+        Transform targetFollow, Transform targetHit)
     {
         SpawnAndGetObject(type, transform.position, transform.rotation)
-            .Initialize(data);
+            .Initialize(data,targetFollow, targetHit);
     }
 
     protected override EnemyController InstantiateFromValue(EnemyController value)
