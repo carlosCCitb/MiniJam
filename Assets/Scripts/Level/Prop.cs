@@ -60,13 +60,13 @@ public class Prop : MonoBehaviour, Pool<Prop, Prop.Type, Prop[]>.IPoolable
         {
             transform.localScale = Vector3.one * _scaleInFront;
             _spriteRenderer.color = _colorInFront;
-            _spriteRenderer.sortingOrder = 50;
+            _spriteRenderer.sortingOrder = 75;
         }
         else
         {
             transform.localScale = Vector3.one * _scaleInBack;
             _spriteRenderer.color = _colorInBack;
-            _spriteRenderer.sortingOrder = -50;
+            _spriteRenderer.sortingOrder = -25;
         }
     }
 }
