@@ -5,34 +5,37 @@ public class RetardedBehaviour : MonoBehaviour
     public GameObject Pole;
     public Vector3[] Lastpositions;
     public GameObject ToSwap;
-    private Transform[] gameObjectsToSwap;
+    public Transform[] gameObjectsToSwap;
     private GameObject[] gameObjectsChildren;
+    private GameObject[] gameObjectsGrandChildren;
     private float[] weights;
     public Transform PointUp, PointDown;
+    public GameObject empty;
     private void Awake()
     {
         gameObjectsToSwap = ToSwap.GetComponentsInChildren<Transform>();
         gameObjectsChildren = new GameObject[gameObjectsToSwap.Length];
+        gameObjectsGrandChildren = new GameObject[gameObjectsToSwap.Length];
         weights = new float[gameObjectsToSwap.Length];
         Lastpositions = new Vector3[gameObjectsToSwap.Length];
-        for (int i = 0; i < gameObjectsToSwap.Length; i++)
+        for (int i = 1; i < gameObjectsToSwap.Length; i++)
         {
-            gameObjectsChildren[i] = new GameObject();
-            //CopyComponent<Transform>(gameObjectsToSwap[i], gameObjectsChildren[i]);
-            gameObjectsChildren[i].transform.parent = transform;
+            gameObjectsChildren[i] = Instantiate(empty, gameObjectsToSwap[i].transform.position, Quaternion.identity, transform);
+            gameObjectsGrandChildren[i] = Instantiate(empty);
+            gameObjectsGrandChildren[i].transform.parent = gameObjectsChildren[i].transform;
             weights[i] = (gameObjectsChildren[i].transform.position.y - PointDown.position.y) /
                 (PointUp.position.y - PointDown.position.y);
-            SpriteRenderer sr = gameObjectsToSwap[i].gameObject.GetComponent<SpriteRenderer>();
-            //gameObjectsChildren[i].AddComponent<SpriteRenderer>();
-            CopyComponent<SpriteRenderer>(sr, gameObjectsChildren[i]);
-            sr.enabled = false;
+           SpriteRenderer sr = gameObjectsToSwap[i].gameObject.GetComponent<SpriteRenderer>();
+           CopyComponent<SpriteRenderer>(sr, gameObjectsGrandChildren[i]);
+           sr.enabled = false;
         }
     }
     private void Update()
     {
-        for (int i = 0; i < gameObjectsChildren.Length; i++)
+        for (int i = 1; i < gameObjectsChildren.Length; i++)
         {
             Lastpositions[i] = gameObjectsChildren[i].transform.position;
+            gameObjectsGrandChildren[i].transform.localPosition = gameObjectsToSwap[i].transform.position;
             gameObjectsChildren[i].transform.position = Vector2.Lerp(Pole.transform.position, Lastpositions[i], weights[i]);
         }
     }
