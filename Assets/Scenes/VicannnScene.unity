@@ -1750,13 +1750,14 @@ MonoBehaviour:
     level: 1
   _propSpawner: {fileID: 1147147435}
   _layersAndProps:
-  - minMaxDistance: {x: 0, y: 5000}
+  - minMaxDistance: {x: 0, y: 2000}
     props: 01000000
-  - minMaxDistance: {x: 5001, y: 10000}
+  - minMaxDistance: {x: 2001, y: 5000}
     props: 0100000000000000
-  - minMaxDistance: {x: 10001, y: 20000}
+  - minMaxDistance: {x: 5001, y: 20000}
     props: 00000000
-  _minMaxDistanceToSpawnNextProp: {x: 1000, y: 5000}
+  _minMaxPropSpeed: {x: 7.5, y: 20}
+  _minMaxDistanceToSpawnNextProp: {x: 75, y: 125}
   _backgroundTransform: {fileID: 138217256}
   _backgroundTotalDisplacement: 145
   _mountains:
@@ -2125,7 +2126,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0

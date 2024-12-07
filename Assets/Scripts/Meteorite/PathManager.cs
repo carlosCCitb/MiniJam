@@ -32,6 +32,7 @@ public class PathManager : MonoBehaviour
 
     [Space, SerializeField] private PropSpawner _propSpawner;
     [SerializeField] private LayerAndProps[] _layersAndProps;
+    [SerializeField] private Vector2 _minMaxPropSpeed;
     [SerializeField] private Vector2 _minMaxDistanceToSpawnNextProp;
 
     [Space]
@@ -63,6 +64,8 @@ public class PathManager : MonoBehaviour
         float factor = 1.0f - Mathf.InverseLerp(minMaxSpeed.x, minMaxSpeed.y, currentSpeed);
         float speed = Mathf.Lerp(_minMaxMeteoriteSpeed.x, _minMaxMeteoriteSpeed.y, factor);
 
+        Prop.Speed = Mathf.Lerp(_minMaxPropSpeed.x, _minMaxPropSpeed.y, factor);
+
         _currentDistance += speed * dt;
 
         _backgroundTransform.position = new(_backgroundTransform.position.x, _backgroundTotalDisplacement * (_currentDistance / _totalDistanceToTravel), _backgroundTransform.position.z);
@@ -72,17 +75,17 @@ public class PathManager : MonoBehaviour
 
         _pointerTransform.position = new(_pointerTransform.position.x, Mathf.Lerp(_progressBarTransform.position.y + _progressBarTransform.rect.max.y, _progressBarTransform.position.y + _progressBarTransform.rect.min.y, _currentDistance / _totalDistanceToTravel), _pointerTransform.position.z);
 
-        if (_currentMetersAndLevelEnemySpawn != null && _currentDistance > _currentMetersAndLevelEnemySpawn.Value.meters)
-        {
-            _enemySpawner.Spawn(_currentMetersAndLevelEnemySpawn.Value.level);
-            RefreshCurrentMetersAndLevelEnemySpawn();
-        }
+        //if (_currentMetersAndLevelEnemySpawn != null && _currentDistance > _currentMetersAndLevelEnemySpawn.Value.meters)
+        //{
+        //    _enemySpawner.Spawn(_currentMetersAndLevelEnemySpawn.Value.level);
+        //    RefreshCurrentMetersAndLevelEnemySpawn();
+        //}
 
         if (_currentDistance - _lastPropSpawnedDistance > _distanceToSpawnNextProp)
         { 
             LayerAndProps layerAndProps = _layersAndProps.Where(x => _currentDistance > x.minMaxDistance.x && _currentDistance < x.minMaxDistance.y).FirstOrDefault();
 
-            if (layerAndProps.props.Length == 0) // Didn't find any layerAndProps valid value and returned default
+            if (layerAndProps.props == null) // Didn't find any layerAndProps valid value
                 return;
 
             _propSpawner.Spawn(layerAndProps.props[Random.Range(0, layerAndProps.props.Length)]);

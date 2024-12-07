@@ -21,7 +21,8 @@ public class Prop : MonoBehaviour, Pool<Prop, Prop.Type, Prop[]>.IPoolable
     [Space, SerializeField] private float _scaleInFront;
     [SerializeField] private float _scaleInBack;
 
-    [Space, SerializeField] private bool _shouldRotate;
+    [Space, SerializeField] private bool _canFlip;
+    [SerializeField] private bool _shouldRotate;
     [ShowIf(nameof(_shouldRotate)), SerializeField] private Vector2 _minMaxAngularRotation;
     [SerializeField] private float _maxVerticalPositionToDespawn;
 
@@ -52,15 +53,20 @@ public class Prop : MonoBehaviour, Pool<Prop, Prop.Type, Prop[]>.IPoolable
         _clockwise = Random.value < 0.5f;
         _angularRotation = Random.Range(_minMaxAngularRotation.x, _minMaxAngularRotation.y);
 
+        if (_canFlip)
+            _spriteRenderer.flipX = Random.value < 0.5f;
+
         if (Random.value < 0.5f)
         {
             transform.localScale = Vector3.one * _scaleInFront;
             _spriteRenderer.color = _colorInFront;
+            _spriteRenderer.sortingOrder = 50;
         }
         else
         {
             transform.localScale = Vector3.one * _scaleInBack;
             _spriteRenderer.color = _colorInBack;
+            _spriteRenderer.sortingOrder = -50;
         }
     }
 }

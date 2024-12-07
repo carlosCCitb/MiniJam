@@ -49,8 +49,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 8822575221388037905}
   _colorInFront: {r: 1, g: 1, b: 1, a: 1}
   _colorInBack: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  _scaleInFront: 0.1
-  _scaleInBack: 0.05
+  _scaleInFront: 0.3
+  _scaleInBack: 0.1
   _shouldRotate: 0
   _minMaxAngularRotation: {x: 0, y: 0}
   _maxVerticalPositionToDespawn: 15
