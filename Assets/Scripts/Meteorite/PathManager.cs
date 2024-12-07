@@ -12,6 +12,7 @@ public class PathManager : MonoBehaviour
     [BoxGroup("Background values"), SerializeField] private Transform _backgroundTransform;
     [BoxGroup("Background values"), SerializeField] private float _backgroundTotalDisplacement;
     [BoxGroup("Background values"), SerializeField] private Transform[] _mountains;
+    [BoxGroup("Background values"), SerializeField] private Transform _clouds;
 
     public void AddDisplacement(float currentSpeed, Vector2 minMaxSpeed, float dt)
     {
@@ -30,6 +31,12 @@ public class PathManager : MonoBehaviour
         // This is hardcoded
 
         float parentPositionY = _mountains[0].transform.parent.position.y;
+
+        if (parentPositionY > -30 && parentPositionY < 2.5)
+        {
+            float factor = Mathf.InverseLerp(-30, 2.5f, parentPositionY);
+            _clouds.localPosition = new(_clouds.localPosition.x, Mathf.Lerp(30.0f, 2.5f, factor), _clouds.localPosition.z);
+        }
 
         if (parentPositionY > -20 && parentPositionY < 0)
         {
