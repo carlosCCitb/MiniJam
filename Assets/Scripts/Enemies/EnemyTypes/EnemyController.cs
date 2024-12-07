@@ -81,6 +81,12 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
 
     protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
 
+    protected void DoDamage(Rigidbody2D rigidbody)
+    {
+        if (rigidbody.TryGetComponent(out IDamageable damageable))
+            damageable.OnHurt(_enemySO.Damage);
+    }
+
     public void OnHurt(int Damage)
     {
         _currentHealth -= Damage;
