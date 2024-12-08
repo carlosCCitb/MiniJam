@@ -101,7 +101,7 @@ public class Meteorite : MonoBehaviour, IDamageable
         {
             Vector2 shootingTarget = _camera.ScreenToWorldPoint(_playerInput.MousePosition);
 
-            _shooter.Shoot(Bullet.Type.Standard, shootingTarget, _bulletSpawnPoint.position, (shootingTarget - (Vector2)_bulletSpawnPoint.position).normalized * _shootingSpeed, _damage);
+            _shooter.Shoot(Bullet.Type.laser, shootingTarget, _bulletSpawnPoint.position, (shootingTarget - (Vector2)_bulletSpawnPoint.position).normalized * _shootingSpeed, _damage);
             _lastTimeShoot = Time.time;
             await UniTask.Delay(TimeSpan.FromSeconds(_shootingCooldown), cancellationToken: _cancellationTokenSource.Token);
         }
