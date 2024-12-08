@@ -10,6 +10,14 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     private ParticleSystem.ShapeModule shape;
     private ParticleSystem.EmissionModule emission;
     [SerializeField] private float rateMultiplier;
+    [SerializeField] private AudioClipConfiguration _demolishRock1;
+    [SerializeField] private AudioSource _audioSource;
+    private float _startVolume;
+    [SerializeField] [Range(0f, 0.2f)] float _volumeAttenuation;
+    public int GetCurrentSkin()
+    {
+        return _currentSkin;
+    }
     private void Awake()
     {
         _currentSkin = 0;
@@ -21,21 +29,27 @@ public class DragMeteoriteBehaviour : MonoBehaviour
         emission = particles.emission;
         shape.radius = ShapeValues[0];
         _initialRateOverTime = emission.rateOverTime.constant;
+        _audioSource = GetComponent<AudioSource>();
+        _startVolume = _audioSource.volume;
     }
     public void ChangeSkin(int i)
     {
         if (_currentSkin == i)
             return;
-
+        if (_currentSkin < 3)
+            _demolishRock1.Play();
+        _audioSource.volume = _startVolume - i * _volumeAttenuation; 
         MeteorSkins[_currentSkin].SetActive(false);
-
-        if(_currentSkin+5<MeteorSkins.Count)
+        if(_currentSkin+5 < MeteorSkins.Count)
             MeteorSkins[_currentSkin + 5].SetActive(false);
+
         _currentSkin = i;
+
         MeteorSkins[_currentSkin].SetActive(true);
         if (_currentSkin + 5 < MeteorSkins.Count)
             MeteorSkins[_currentSkin + 5].SetActive(true);
         AdjustParticlesToShape(i);
+        
     }
     public void AdjustParticlesToShape(int i)
     {

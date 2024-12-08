@@ -29,6 +29,7 @@ public class Meteorite : MonoBehaviour, IDamageable
 
     private CancellationTokenSource _cancellationTokenSource;
     private DragMeteoriteBehaviour _dragBehaviour;
+    
 
     private void Awake()
     {

@@ -13,4 +13,36 @@ MonoBehaviour:
   m_Name: AllAudioClipsHolder
   m_EditorClassIdentifier: 
   _audioClips:
-    _serializedList: []
+    _serializedList:
+    - Key: 9
+      Value: {fileID: 8300000, guid: 4e541759e600eb449986c7096eabc608, type: 3}
+    - Key: 16
+      Value: {fileID: 8300000, guid: 5423136ecf2f7134f87887fd5544844a, type: 3}
+    - Key: 14
+      Value: {fileID: 8300000, guid: 408498f9ba305a944968dff0caad132b, type: 3}
+    - Key: 13
+      Value: {fileID: 8300000, guid: d7ecb00d3104faa41af63af98c449a35, type: 3}
+    - Key: 12
+      Value: {fileID: 8300000, guid: 2d13aad57f9ec7c4ab4099d2be6bc73d, type: 3}
+    - Key: 11
+      Value: {fileID: 8300000, guid: 829c8bb37adf08340a1d6019f97efb3a, type: 3}
+    - Key: 10
+      Value: {fileID: 8300000, guid: e997292a2d9f3b946a2127639ed71d34, type: 3}
+    - Key: 1
+      Value: {fileID: 8300000, guid: d67c53ddaff778a45a5a5745cdd49cef, type: 3}
+    - Key: 15
+      Value: {fileID: 8300000, guid: 82ea931aa0926ce4b96b4b6fc7475bc9, type: 3}
+    - Key: 8
+      Value: {fileID: 8300000, guid: d311414737021c24b9d46b5b1db5ff45, type: 3}
+    - Key: 7
+      Value: {fileID: 8300000, guid: 4cb9f894906898b429f4d7039e060b8f, type: 3}
+    - Key: 2
+      Value: {fileID: 8300000, guid: 4a9adddc27fdb314faf3da57464bcbc4, type: 3}
+    - Key: 3
+      Value: {fileID: 8300000, guid: 30c50c05001ee0644a9f16c6dc411d65, type: 3}
+    - Key: 4
+      Value: {fileID: 8300000, guid: e042f087edc760942be3badde1ae3282, type: 3}
+    - Key: 6
+      Value: {fileID: 8300000, guid: 4862564917027944898871ac46eb96f9, type: 3}
+    - Key: 5
+      Value: {fileID: 8300000, guid: 39c86c2789081e54ebd90cfa62814891, type: 3}
