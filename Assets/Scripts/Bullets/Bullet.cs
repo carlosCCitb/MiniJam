@@ -33,8 +33,13 @@ public class Bullet : MonoBehaviour, Pool<Bullet, Bullet.Type, Bullet>.IPoolable
         {
             damageable.OnHurt(_damage);
 
-            if (damageable is Meteorite)
-                GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.HitRock, collision.contacts[0].point);
+            if (damageable is Meteorite meteorite)
+            {
+                if (meteorite.IsRock())
+                    GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.HitRock, collision.contacts[0].point);
+                else
+                    GameManager.Instance.ParticlePool.Spawn(ParticleConfiguration.Type.HitSpark, collision.contacts[0].point);
+            }
         }
 
         RequestDespawn();

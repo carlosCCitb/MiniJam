@@ -10,7 +10,8 @@ public class ParticleConfiguration : MonoBehaviour, Pool<ParticleConfiguration, 
     { 
         HitRock = 0,
         HitDust = 1,
-        Explosion = 2
+        Explosion = 2,
+        HitSpark = 3
     }
 
     [SerializeField] private Type _type;
