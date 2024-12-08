@@ -61,9 +61,9 @@ public class DragMeteoriteBehaviour : MonoBehaviour
         emission = particles.emission;
         shape.radius = ShapeValues[0];
         _initialRateOverTime = emission.rateOverTime.constant;
-        _audioSource.volume = 0.5f;
+        _audioSource.volume = 0.3f;
         _audioSource2.enabled = false;
-        _startVolume = 0.5f;
+        _startVolume = 0.3f;
         StartCoroutine(StartSound2());
     }
     private IEnumerator StartSound2()
@@ -84,11 +84,14 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     {
         if (_currentSkin == i)
             return;
+        else
+        {
+            _audioSource.volume = _startVolume - i * _volumeAttenuation;
+            _audioSource2.volume = _startVolume - i * _volumeAttenuation;
+        }
 
         if (_currentSkin < 3)
             _demolishRock1.Play();
-        _audioSource.volume = _startVolume - i * _volumeAttenuation;
-        _audioSource2.volume = _startVolume - i * _volumeAttenuation;
         MeteorSkins[_currentSkin].SetActive(false);
         if(_currentSkin+5 < MeteorSkins.Count)
             MeteorSkins[_currentSkin + 5].SetActive(false);

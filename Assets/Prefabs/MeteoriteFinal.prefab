@@ -10747,10 +10747,10 @@ MonoBehaviour:
   _demolishRock1: {fileID: 11400000, guid: b08d7bec32fd1af4eb518cd1e36a89c1, type: 2}
   _audioSource: {fileID: 363487124498622042}
   _audioSource2: {fileID: 2179117802371395789}
-  _volumeAttenuation: 0.087
+  _volumeAttenuation: 0.033
   _splashHigh: {fileID: 11400000, guid: ef115b845fc5432438fb17261bdb8a17, type: 2}
-  _splashMid: {fileID: 11400000, guid: 3a87c4f5623e4cf4b97c23c0441dda6a, type: 2}
-  _splashLow: {fileID: 11400000, guid: 3f85c6b1cca23da4da771a1f27ebe621, type: 2}
+  _splashMid: {fileID: 11400000, guid: 3f85c6b1cca23da4da771a1f27ebe621, type: 2}
+  _splashLow: {fileID: 11400000, guid: 3a87c4f5623e4cf4b97c23c0441dda6a, type: 2}
   bubbleMaterial: {fileID: 2100000, guid: 92e279901cf65ee4ca19359a543190b5, type: 2}
 --- !u!1 &3073842565677988010
 GameObject:
