@@ -32,13 +32,13 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     }
     private void OnEnable()
     {
-        WaterLimit.GoDeep += OnSplash;
         WaterLimit.GoDeep += ChangeToWaterParticles;
+        WaterSound.PlayWaterSplash += OnSplash;
     }
     private void OnDisable()
     {
-        WaterLimit.GoDeep -= OnSplash;
         WaterLimit.GoDeep -= ChangeToWaterParticles;
+        WaterSound.PlayWaterSplash -= OnSplash;
     }
     [Button]
     public void OnSplash()
