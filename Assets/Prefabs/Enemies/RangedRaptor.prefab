@@ -364,9 +364,6 @@ MonoBehaviour:
   _shooter: {fileID: 9187146695089568835}
   _transformToInvert: {fileID: 0}
   _animator: {fileID: 7740721364540732931}
-  _particleSystem: {fileID: 8857762766313123036}
-  _waterMaterial: {fileID: 2100000, guid: 92e279901cf65ee4ca19359a543190b5, type: 2}
-  _shootingPoint: {fileID: 2959132182648188578}
 --- !u!114 &1430198704879482398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _shootSound: {fileID: 11400000, guid: 31370bff23e168d4c80cce1983d12ad7, type: 2}
+  bulletsNumber: 1
+  angleRange: 12
 --- !u!61 &2199784780230264977
 BoxCollider2D:
   m_ObjectHideFlags: 0

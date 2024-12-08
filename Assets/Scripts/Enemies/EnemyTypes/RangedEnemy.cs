@@ -9,28 +9,16 @@ public class RangedEnemy : EnemyController
     CancellationTokenSource _cancellationTokenSource = new();
     [SerializeField] private Transform _transformToInvert;
     [SerializeField] private Animator _animator;
-
-    [SerializeField] private ParticleSystem _particleSystem;
-    [SerializeField] private Material _waterMaterial;
-    [SerializeField] private Transform _shootingPoint;
-
     private void OnEnable()
     {
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource = new();
         AttackRange = _enemySO.Range + _enemySO.Offset;
         ShootAsync().Forget();
-
-        if (WaterLimit.WaterDepths)
-            ChangeParticleWater();
-
-        WaterLimit.GoDeep += ChangeParticleWater;
     }
 
     private void OnDisable()
     {
-        WaterLimit.GoDeep -= ChangeParticleWater;
-
         _cancellationTokenSource?.Cancel();
     }
 
@@ -57,19 +45,10 @@ public class RangedEnemy : EnemyController
         {
             await UniTask.WaitUntil(() => _currentMovementState is not ChaseState, cancellationToken: _cancellationTokenSource.Token);
             _animator.SetTrigger("Attack");
-            _shooter.Shoot(_enemySO.BulletType, Target.position, _shootingPoint.position, (Target.position - _shootingPoint.position).normalized * _enemySO.BulletSpeed, _enemySO.Damage);
+            _shooter.Shoot(_enemySO.BulletType, Target.position, transform.position, (Target.position - transform.position).normalized * _enemySO.BulletSpeed, _enemySO.Damage);
             await UniTask.Delay(TimeSpan.FromSeconds(_enemySO.Coldown), cancellationToken: _cancellationTokenSource.Token);
         }
     }
-
-    private void ChangeParticleWater()
-    {
-        if (_particleSystem.TryGetComponent(out ParticleSystemRenderer value))
-            value.sharedMaterial = _waterMaterial;
-        else
-            _particleSystem.gameObject.SetActive(false);
-    }
-
     private void OnDestroy()
     {
         _cancellationTokenSource?.Dispose();
