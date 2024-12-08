@@ -842,6 +842,10 @@ PrefabInstance:
       propertyPath: TargetToHit
       value: 
       objectReference: {fileID: 1694790331}
+    - target: {fileID: 8695271814799065248, guid: f96e28716c99aee489dccd5d4dd8f4dd, type: 3}
+      propertyPath: _onDieSound
+      value: 
+      objectReference: {fileID: 11400000, guid: 19039221957b2f348abfbe5492c47098, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
