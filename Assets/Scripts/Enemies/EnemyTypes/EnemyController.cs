@@ -76,6 +76,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     }
     public void DeadBehaviour()
     {
+        _cancellationTokenSource2?.Cancel();
+
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource = new();
         _collider.enabled = false;
@@ -121,6 +123,9 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     }
     public void OnHurt(int Damage)
     {
+        if (_currentHealth == 0)
+            return;
+
         _currentHealth -= Damage;
         _currentHealth = Mathf.Max(_currentHealth, 0);
         _cancellationTokenSource2?.Cancel();

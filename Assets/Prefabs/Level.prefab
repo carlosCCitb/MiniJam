@@ -5847,7 +5847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Key
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[1].Key
@@ -6067,7 +6067,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: db816694ecec411439e0aa38c28e75e9, type: 2}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Value.Array.data[0].spawnDatas.Array.data[1].enemyType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Value.Array.data[0].spawnDatas.Array.data[2].enemyData
@@ -6075,7 +6075,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: db816694ecec411439e0aa38c28e75e9, type: 2}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Value.Array.data[0].spawnDatas.Array.data[2].enemyType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Value.Array.data[0].spawnDatas.Array.data[3].enemyData
@@ -6083,7 +6083,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: db816694ecec411439e0aa38c28e75e9, type: 2}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Value.Array.data[0].spawnDatas.Array.data[3].enemyType
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3169698387482288365, guid: a79a1116488d46e4398db64f86e9792c, type: 3}
       propertyPath: _waves._serializedList.Array.data[0].Value.Array.data[1].spawnDatas.Array.data[0].enemyData

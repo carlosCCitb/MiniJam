@@ -5548,7 +5548,7 @@ MonoBehaviour:
   - {fileID: 2410160234977886966}
   Target: {fileID: 0}
   TargetToHit: {fileID: 0}
-  RedColor: {r: 0, g: 0, b: 0, a: 0}
+  RedColor: {r: 1, g: 0.4481132, b: 0.4481132, a: 1}
   _collider: {fileID: 9140307168880387657}
   AttackRange: 55
   _currentHealth: 0
