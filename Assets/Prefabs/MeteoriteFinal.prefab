@@ -5927,7 +5927,7 @@ MonoBehaviour:
   rateMultiplier: 0.2
   _demolishRock1: {fileID: 11400000, guid: b08d7bec32fd1af4eb518cd1e36a89c1, type: 2}
   _audioSource: {fileID: 363487124498622042}
-  _audioSource2: {fileID: 1834970799087723}
+  _audioSource2: {fileID: 2179117802371395789}
   _volumeAttenuation: 0.087
 --- !u!1 &3073842565677988010
 GameObject:
@@ -6450,6 +6450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 1
+  _shootSound: {fileID: 11400000, guid: 31370bff23e168d4c80cce1983d12ad7, type: 2}
 --- !u!50 &5591019803484328044
 Rigidbody2D:
   serializedVersion: 5
@@ -6620,7 +6621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4864105126572495610}
   - component: {fileID: 601318279873429163}
-  - component: {fileID: 1834970799087723}
+  - component: {fileID: 2179117802371395789}
   m_Layer: 0
   m_Name: PlayerInput
   m_TagString: Untagged
@@ -6655,7 +6656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd086a1c4b7b504eb0f457bde631eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1834970799087723
+--- !u!82 &2179117802371395789
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
