@@ -606,11 +606,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633091732}
   m_CullTransparentMesh: 1
---- !u!198 &730254027 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3685393252060144752, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
-  m_PrefabInstance: {fileID: 1508293013}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &997802057
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,10 +861,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 290730849}
     - target: {fileID: 4896719131994230009, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896719131994230009, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
       propertyPath: _pathManager
       value: 
       objectReference: {fileID: 1550804363}
@@ -877,17 +868,9 @@ PrefabInstance:
       propertyPath: _bulletSpawnPoint
       value: 
       objectReference: {fileID: 1550804364}
-    - target: {fileID: 4896719131994230009, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
-      propertyPath: _fireParticleSystem
-      value: 
-      objectReference: {fileID: 730254027}
     - target: {fileID: 6237253089448613554, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
       propertyPath: m_Name
       value: MeteoriteParent
-      objectReference: {fileID: 0}
-    - target: {fileID: 6237253089448613554, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -965,6 +948,10 @@ PrefabInstance:
       propertyPath: _playerTransform
       value: 
       objectReference: {fileID: 1072741083}
+    - target: {fileID: 8215172494982329052, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8973039478294651555, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _pointerTransform
       value: 
@@ -1206,6 +1193,10 @@ PrefabInstance:
     - target: {fileID: 1025207021166210180, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025207021166210180, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4809327828404505830, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
       propertyPath: m_LocalPosition.x

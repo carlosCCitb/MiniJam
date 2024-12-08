@@ -30,7 +30,7 @@ public class RetardedBehaviour : MonoBehaviour
             gameObjectsChildren[i] = Instantiate(empty, gameObjectsToSwap[i].transform.position, Quaternion.identity, transform);
             gameObjectsGrandChildren[i] = Instantiate(empty);
             gameObjectsGrandChildren[i].transform.parent = gameObjectsChildren[i].transform;
-            gameObjectsChildren[i].transform.localScale = Pole.transform.localScale;
+            gameObjectsChildren[i].transform.localScale = Vector3.Scale(Pole.transform.localScale, ToSwap.transform.parent.localScale);
             weights[i] = (gameObjectsChildren[i].transform.position.y - PointDown.position.y) /
                 (PointUp.position.y - PointDown.position.y);
            SpriteRenderer sr = gameObjectsToSwap[i].gameObject.GetComponent<SpriteRenderer>();

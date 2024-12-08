@@ -5,6 +5,9 @@ using NaughtyAttributes;
 public class DragMeteoriteBehaviour : MonoBehaviour
 {
     public List<GameObject> MeteorSkins;
+    [SerializeField] private float[] _colliderRadius;
+    [SerializeField] private CircleCollider2D _collider;
+    [SerializeField] private CircleCollider2D _particlesCollider;
     [SerializeField] private int _currentSkin;
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private ParticleSystem particles2;
@@ -84,11 +87,11 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     {
         if (_currentSkin == i)
             return;
-        else
-        {
-            _audioSource.volume = _startVolume - i * _volumeAttenuation;
-            _audioSource2.volume = _startVolume - i * _volumeAttenuation;
-        }
+
+        _collider.radius = _colliderRadius[i];
+        
+        _audioSource.volume = _startVolume - i * _volumeAttenuation;
+        _audioSource2.volume = _startVolume - i * _volumeAttenuation;
 
         if (_currentSkin < 3)
             _demolishRock1.Play();
@@ -117,6 +120,8 @@ public class DragMeteoriteBehaviour : MonoBehaviour
             value.sharedMaterial = bubbleMaterial;
         else
             particles2.gameObject.SetActive(false);
+
+        _particlesCollider.enabled = true;
     }
     public void AdjustParticlesToShape(int i)
     {
