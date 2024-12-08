@@ -161,7 +161,7 @@ public class Meteorite : MonoBehaviour, IDamageable
         OnHurt(10);
     }
 
-    public bool IsRock() => _dragBehaviour.GetCurrentSkin() >= 3;
+    public bool IsRock() => _dragBehaviour.GetCurrentSkin() < 3;
 
     private void OnDestroy()
     {
