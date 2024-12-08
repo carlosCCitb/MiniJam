@@ -7,7 +7,7 @@ public class RangedEnemy : EnemyController
 {
     [SerializeField] private Shooter _shooter;
     CancellationTokenSource _cancellationTokenSource = new();
-
+    [SerializeField] private Transform _transformToInvert;
     private void OnEnable()
     {
         _cancellationTokenSource?.Cancel();
@@ -20,6 +20,15 @@ public class RangedEnemy : EnemyController
     {
         _cancellationTokenSource?.Cancel();
     }
+    /*private void LateUpdate()
+    {
+        Quaternion lookRotation = Quaternion.Euler(new Vector3(0f, 0f, AngleBetweenPoints(transform.position, Target.position) + 90.0f));
+        transform.rotation = lookRotation;
+
+        _spriteRenderer.flipX = Target.position.x > transform.position.x;
+
+        float AngleBetweenPoints(Vector2 a, Vector2 b) => Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
+    }*/
 
     private void FixedUpdate()
     {
