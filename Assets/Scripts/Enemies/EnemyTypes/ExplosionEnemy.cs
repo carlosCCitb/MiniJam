@@ -4,8 +4,11 @@ public class ExplosionEnemy : EnemyController
     [SerializeField] private LayerMask _layersToApplyExplosionForces;
     private void Awake()
     {
-        TargetToHit = Target;
         AttackRange = _enemySO.Range;
+    }
+    private void FixedUpdate()
+    {
+        _currentMovementState.OnStateUpdate(this);
     }
     private void LateUpdate()
     {
@@ -16,12 +19,6 @@ public class ExplosionEnemy : EnemyController
 
         float AngleBetweenPoints(Vector2 a, Vector2 b) => Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
-
-    private void FixedUpdate()
-    {
-        _currentMovementState.OnStateUpdate(this);
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)

@@ -19,6 +19,5 @@ public class FallingState : NormalStates
         {
             enemyController.GoToState<AttackState>();
         }
-        Debug.Log("Idle");
     }
 }

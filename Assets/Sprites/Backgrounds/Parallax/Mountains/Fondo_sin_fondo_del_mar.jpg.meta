@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fondo_sin_fondo_del_mar_0: -5170879839959682876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

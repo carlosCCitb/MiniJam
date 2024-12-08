@@ -21,6 +21,5 @@ public class AttackState : NormalStates
             enemyController.GoToState<FallingState>();
             enemyController.GoToMovingState<ChaseState>();
         }
-        Debug.Log("Attack");
     }
 }
