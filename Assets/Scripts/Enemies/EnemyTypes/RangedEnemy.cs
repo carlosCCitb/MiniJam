@@ -16,14 +16,14 @@ public class RangedEnemy : EnemyController
         AttackRange = _enemySO.Range + _enemySO.Offset;
         ShootAsync().Forget();
     }
-
     private void OnDisable()
     {
         _cancellationTokenSource?.Cancel();
     }
-
     private void FixedUpdate()
     {
+        if (Target == null)
+            Target = TargetToHit;
         _currentMovementState.OnStateUpdate(this);
         float DistanceToPlayer = (Target.transform.position - transform.position).magnitude;
         if (DistanceToPlayer > _enemySO.Range + _enemySO.Offset)
