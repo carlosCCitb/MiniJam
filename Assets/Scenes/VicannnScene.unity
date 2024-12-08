@@ -937,6 +937,30 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -51
       objectReference: {fileID: 0}
+    - target: {fileID: 3156963786179121119, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9932784
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156963786179121119, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156963786179121119, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8443396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707569929806649502, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707569929806649502, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9974564
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707569929806649502, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9575472
+      objectReference: {fileID: 0}
     - target: {fileID: 4871976245401277937, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _meteorite
       value: 
@@ -957,9 +981,45 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -51
       objectReference: {fileID: 0}
+    - target: {fileID: 7434817288215343857, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9214774
+      objectReference: {fileID: 0}
+    - target: {fileID: 7434817288215343857, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 7434817288215343857, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.73794055
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486353035194707572, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.72375536
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486353035194707572, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486353035194707572, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5947846
+      objectReference: {fileID: 0}
     - target: {fileID: 8486353035194707572, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: m_SortingOrder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535539135568051403, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9329237
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535539135568051403, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535539135568051403, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.759434
       objectReference: {fileID: 0}
     - target: {fileID: 8767995501602051356, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: m_SortingOrder
@@ -977,6 +1037,18 @@ PrefabInstance:
       propertyPath: _progressBarTransform
       value: 
       objectReference: {fileID: 633091733}
+    - target: {fileID: 9064321247602972406, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064321247602972406, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.88545823
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064321247602972406, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6808473
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
