@@ -2,7 +2,6 @@ using Cysharp.Threading.Tasks;
 using System;
 using System.Threading;
 using UnityEngine;
-using static UnityEngine.ParticleSystem;
 
 public class RangedEnemy : EnemyController
 {
@@ -13,6 +12,7 @@ public class RangedEnemy : EnemyController
 
     [SerializeField] private ParticleSystem _particleSystem;
     [SerializeField] private Material _waterMaterial;
+    [SerializeField] private Transform _shootingPoint;
 
     private void OnEnable()
     {
@@ -57,7 +57,7 @@ public class RangedEnemy : EnemyController
         {
             await UniTask.WaitUntil(() => _currentMovementState is not ChaseState, cancellationToken: _cancellationTokenSource.Token);
             _animator.SetTrigger("Attack");
-            _shooter.Shoot(_enemySO.BulletType, Target.position, transform.position, (Target.position - transform.position).normalized * _enemySO.BulletSpeed, _enemySO.Damage);
+            _shooter.Shoot(_enemySO.BulletType, Target.position, _shootingPoint.position, (Target.position - _shootingPoint.position).normalized * _enemySO.BulletSpeed, _enemySO.Damage);
             await UniTask.Delay(TimeSpan.FromSeconds(_enemySO.Coldown), cancellationToken: _cancellationTokenSource.Token);
         }
     }

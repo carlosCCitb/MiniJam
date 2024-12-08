@@ -5062,6 +5062,7 @@ MonoBehaviour:
   _animator: {fileID: 1986978758618181916}
   _particleSystem: {fileID: 7815579768731648843}
   _waterMaterial: {fileID: 2100000, guid: 92e279901cf65ee4ca19359a543190b5, type: 2}
+  _shootingPoint: {fileID: 2786429201899195244}
 --- !u!114 &5059426238838554870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5419,6 +5420,37 @@ Transform:
   - {fileID: 4833354804999460236}
   m_Father: {fileID: 4910513566052152254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3492694618162585176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2786429201899195244}
+  m_Layer: 0
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2786429201899195244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492694618162585176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.01, y: 1.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7190518162047365471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3914798148193648342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,7 +5680,8 @@ Transform:
   m_LocalPosition: {x: -4.8602324, y: 0.62300587, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2786429201899195244}
   m_Father: {fileID: 4460722955159904698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2477084627352795585
