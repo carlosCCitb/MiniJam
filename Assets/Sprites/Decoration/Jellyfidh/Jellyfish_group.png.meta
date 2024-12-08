@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jellyfish_group_0: -4163973827880326257
+      Jellyfish_group_1: -2998030240351248503
+      Jellyfish_group_2: -6854101070827183037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
