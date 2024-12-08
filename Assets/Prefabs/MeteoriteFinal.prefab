@@ -11248,6 +11248,7 @@ MonoBehaviour:
   _shooter: {fileID: 9127032281144621024}
   _pathManager: {fileID: 0}
   _fireParticleSystem: {fileID: 0}
+  _endGame: {fileID: 0}
   _healthPoints: 100
   _currentHealthPoints: 100
   _damage: 1
@@ -11347,7 +11348,7 @@ AudioSource:
   m_GameObject: {fileID: 4982702337521691696}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8730354655282568084, guid: a52b1b23a55a5d14ab8017e143d1f670, type: 2}
   m_audioClip: {fileID: 8300000, guid: 30c50c05001ee0644a9f16c6dc411d65, type: 3}
   m_Resource: {fileID: 8300000, guid: 30c50c05001ee0644a9f16c6dc411d65, type: 3}
   m_PlayOnAwake: 1
@@ -11489,7 +11490,7 @@ AudioSource:
   m_GameObject: {fileID: 5058846029138756083}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8730354655282568084, guid: a52b1b23a55a5d14ab8017e143d1f670, type: 2}
   m_audioClip: {fileID: 8300000, guid: 30c50c05001ee0644a9f16c6dc411d65, type: 3}
   m_Resource: {fileID: 8300000, guid: 30c50c05001ee0644a9f16c6dc411d65, type: 3}
   m_PlayOnAwake: 1

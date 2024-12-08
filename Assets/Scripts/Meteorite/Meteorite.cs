@@ -113,6 +113,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     }
     public void OnHurt(int damage)
     {
+        return;
         _currentHealthPoints -= damage;
         float proportion = (float)_currentHealthPoints / (float)_healthPoints;
         int skin = proportion switch

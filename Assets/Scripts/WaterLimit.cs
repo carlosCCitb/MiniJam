@@ -20,8 +20,8 @@ public class WaterLimit : MonoBehaviour
     {
         if (collision.attachedRigidbody.gameObject.layer == 8)
         {
-            GoDeep?.Invoke();
             WaterDepths = true;
+            GoDeep?.Invoke();
             _collider.enabled = false;
         }
     }
