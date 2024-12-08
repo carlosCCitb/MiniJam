@@ -32,6 +32,7 @@ public abstract class Pool<T1, T2, T3> : MonoBehaviour
                 throw new Exception($"[{nameof(Pool<T1, T2, T3>)}.cs] Value not found for type {type}");
 
             obj = InstantiateFromValue(value);
+            DontDestroyOnLoad(obj.PoolableGameObject);
             OnInstantiationManaging(obj, args);
         }
 
