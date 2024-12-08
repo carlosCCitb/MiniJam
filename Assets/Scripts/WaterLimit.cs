@@ -6,7 +6,7 @@ public class WaterLimit : MonoBehaviour
     public static bool WaterDepths = false;
     private Collider2D _collider;
 
-    public void Inicialize()
+    public void Initialize()
     {
         WaterDepths = false;
         _collider.enabled = true;
@@ -14,12 +14,15 @@ public class WaterLimit : MonoBehaviour
     private void Awake()
     {
         _collider = GetComponent<Collider2D>();
-        Inicialize();
+        Initialize();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GoDeep.Invoke();
-        WaterDepths = true;
-        _collider.enabled = false;
+        if (collision.attachedRigidbody.gameObject.layer == 8)
+        {
+            GoDeep?.Invoke();
+            WaterDepths = true;
+            _collider.enabled = false;
+        }
     }
 }

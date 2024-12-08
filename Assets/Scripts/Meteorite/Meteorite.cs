@@ -70,7 +70,7 @@ public class Meteorite : MonoBehaviour, IDamageable
 
         ParticleSystem.EmissionModule emmision = _fireParticleSystem.emission;
         float factor = Mathf.InverseLerp(_minMaxSpeed.x, _minMaxSpeed.y, _currentVerticalSpeed);
-        emmision.rateOverTime = Mathf.Lerp(0.0f, 500.0f, factor);
+        emmision.rateOverTime = Mathf.Lerp(500.0f, 0.0f, factor);
     }
 
     private void OnInputMoveChanged(Vector2 input)
@@ -113,6 +113,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     }
     public void OnHurt(int damage)
     {
+        return;
         _currentHealthPoints -= damage;
         float proportion = (float)_currentHealthPoints / (float)_healthPoints;
         int skin = proportion switch

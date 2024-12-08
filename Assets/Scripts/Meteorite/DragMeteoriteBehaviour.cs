@@ -38,7 +38,7 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     private void OnDisable()
     {
         WaterLimit.GoDeep -= OnSplash;
-        WaterLimit.GoDeep += ChangeToWaterParticles;
+        WaterLimit.GoDeep -= ChangeToWaterParticles;
     }
     [Button]
     public void OnSplash()
