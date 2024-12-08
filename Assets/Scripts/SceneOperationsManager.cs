@@ -32,6 +32,8 @@ public class SceneOperationsManager : MonoBehaviour
 
         await FadeOut(timeToBlackScreen);
 
+        GameManager.Instance.DespawnAll();
+
         await LoadSingleScene(sceneName);
         await UnloadSingleScene(currentSceneName);
 

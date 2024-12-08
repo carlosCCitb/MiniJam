@@ -42,4 +42,14 @@ public class GameManager : MonoBehaviour
         else
             Debug.LogWarning("GameManager should only be in MainMenuScene");
     }
+
+    public void DespawnAll()
+    {
+        _audioSourcePool.DespawnAll();
+        _bulletPool.DespawnAll();
+        _enemyPool.DespawnAll();
+        _particlePool.DespawnAll();
+        _propPool.DespawnAll();
+
+    }
 }

@@ -117,6 +117,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     }
     public void OnHurt(int Damage)
     {
+        return;
         _currentHealth -= Damage;
         Mathf.Max(_currentHealth, 0);
         _cancellationTokenSource2?.Cancel();

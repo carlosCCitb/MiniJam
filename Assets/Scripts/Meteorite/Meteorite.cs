@@ -12,6 +12,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     [SerializeField] private Shooter _shooter;
     [SerializeField] private PathManager _pathManager;
     [SerializeField] private ParticleSystem _fireParticleSystem;
+    [SerializeField] private EndGame _endGame;
 
     [Space, SerializeField] private int _healthPoints;
     [SerializeField, ReadOnly] private int _currentHealthPoints;
@@ -135,7 +136,7 @@ public class Meteorite : MonoBehaviour, IDamageable
         }
         _dragBehaviour.ChangeSkin(skin);
 
-        Mathf.Max(_currentHealthPoints, 0);
+        _currentHealthPoints = Mathf.Max(_currentHealthPoints, 0);
 
         if (_currentHealthPoints == 0)
             OnDie();
@@ -150,10 +151,8 @@ public class Meteorite : MonoBehaviour, IDamageable
     }
     public void OnDie()
     {
-        // TODO
-        Debug.Log($"[{nameof(Meteorite)}.cs] Player dead");
-
         enabled = false;
+        _endGame.End(false);
     }
 
     [Button]

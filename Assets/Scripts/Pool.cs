@@ -58,6 +58,14 @@ public abstract class Pool<T1, T2, T3> : MonoBehaviour
         GetQueue(obj.PoolableType).Enqueue(obj);
     }
 
+    public void DespawnAll()
+    {
+        List<T1> list = new(spawnedObjects);
+
+        foreach (var obj in list)
+            Despawn(obj);
+    }
+
     private Queue<T1> GetQueue(T2 type)
     {
         if (!_pool.TryGetValue(type, out Queue<T1> queue))
