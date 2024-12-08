@@ -22,4 +22,4 @@ MonoBehaviour:
   Sign: 0
   Coldown: 5
   BulletType: 0
-  BulletSpeed: 0
+  BulletSpeed: 2

@@ -14,15 +14,41 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     private ParticleSystem.ShapeModule shape;
     private ParticleSystem.EmissionModule emission;
     [SerializeField] private float rateMultiplier;
+
+
     [SerializeField] private AudioClipConfiguration _demolishRock1;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioSource _audioSource2;
     private float _startVolume;
     [SerializeField] [Range(0f, 0.2f)] float _volumeAttenuation;
+    [SerializeField] private AudioClipConfiguration _splashHigh;
+    [SerializeField] private AudioClipConfiguration _splashMid;
+    [SerializeField] private AudioClipConfiguration _splashLow;
+
     [SerializeField] private Material bubbleMaterial;
     public int GetCurrentSkin()
     {
         return _currentSkin;
+    }
+    private void OnEnable()
+    {
+        WaterLimit.GoDeep += OnSplash;
+        WaterLimit.GoDeep += ChangeToWaterParticles;
+    }
+    private void OnDisable()
+    {
+        WaterLimit.GoDeep -= OnSplash;
+        WaterLimit.GoDeep += ChangeToWaterParticles;
+    }
+    [Button]
+    public void OnSplash()
+    {
+        if (_currentSkin == 0)
+            _splashHigh.Play();
+        else if (_currentSkin < 3)
+            _splashMid.Play();
+        else
+            _splashLow.Play();
     }
     private void Awake()
     {

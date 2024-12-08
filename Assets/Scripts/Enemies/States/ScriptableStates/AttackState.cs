@@ -5,7 +5,7 @@ public class AttackState : NormalStates
 {
     public override void OnStateEnter(EnemyController enemyController)
     {
-        enemyController.gameObject.GetComponentInChildren<Animator>().SetBool("Attack", true);
+
     }
 
     public override void OnStateExit(EnemyController enemyController)
