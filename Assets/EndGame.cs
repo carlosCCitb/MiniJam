@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EndGame : MonoBehaviour
 {
-    [SerializeField] private Image _winImage, _loseImage, _blackImage;
+    [SerializeField] private Image _winImage, _loseImage, _blackImage, _kingWinImage, _kingLoseImage;
     [SerializeField] private GameObject _endButton;
     [SerializeField] private float _fadeTime;
     [SerializeField] private AudioClipConfiguration _winSound;
@@ -34,7 +34,10 @@ public class EndGame : MonoBehaviour
         await FadeOut(_fadeTime);
 
         _winImage.enabled = win;
+        _kingWinImage.enabled = win;
         _loseImage.enabled = !win;
+        _kingLoseImage.enabled = !win;
+
         if (win)
             _winSound.Play();
         else

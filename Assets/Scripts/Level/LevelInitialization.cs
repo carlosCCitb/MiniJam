@@ -11,6 +11,8 @@ public class LevelInitialization : MonoBehaviour
     [SerializeField] private Image _image;
     [SerializeField] private GameObject _text1, _text2, _text3, _text4;
 
+    [SerializeField] private Image _kingImage;
+
     [SerializeField] private float _timeToAppearText1, _timeToAppearText2, _timeToAppearText3, _timeToAppearText4, _timeToDisappearText4;
     [SerializeField] private float _timeToFade;
 
@@ -25,6 +27,8 @@ public class LevelInitialization : MonoBehaviour
     private async UniTaskVoid DoInitializationAsync()
     { 
         _meteorite.enabled = false;
+
+        _kingImage.gameObject.SetActive(true);
 
         _text1.SetActive(false);
         _text2.SetActive(false);
@@ -53,6 +57,7 @@ public class LevelInitialization : MonoBehaviour
         await UniTask.Delay(TimeSpan.FromSeconds(_timeToDisappearText4), cancellationToken: _cancellationTokenSource.Token);
 
         _text4.SetActive(false);
+        _kingImage.gameObject.SetActive(false);
 
         _meteorite.enabled = true;
 
