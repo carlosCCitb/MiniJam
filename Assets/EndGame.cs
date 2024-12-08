@@ -7,6 +7,8 @@ public class EndGame : MonoBehaviour
     [SerializeField] private Image _winImage, _loseImage, _blackImage;
     [SerializeField] private GameObject _endButton;
     [SerializeField] private float _fadeTime;
+    [SerializeField] private AudioClipConfiguration _winSound;
+    [SerializeField] private AudioClipConfiguration _loseSound;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,6 +35,10 @@ public class EndGame : MonoBehaviour
 
         _winImage.enabled = win;
         _loseImage.enabled = !win;
+        if (win)
+            _winSound.Play();
+        else
+            _loseSound.Play();
 
         await FadeIn(_fadeTime);
 
