@@ -2,6 +2,7 @@ using Cysharp.Threading.Tasks;
 using System;
 using System.Threading;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class RangedEnemy : EnemyController
 {
@@ -9,27 +10,29 @@ public class RangedEnemy : EnemyController
     CancellationTokenSource _cancellationTokenSource = new();
     [SerializeField] private Transform _transformToInvert;
     [SerializeField] private Animator _animator;
+
+    [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private Material _waterMaterial;
+
     private void OnEnable()
     {
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource = new();
         AttackRange = _enemySO.Range + _enemySO.Offset;
         ShootAsync().Forget();
+
+        if (WaterLimit.WaterDepths)
+            ChangeParticleWater();
+
+        WaterLimit.GoDeep += ChangeParticleWater;
     }
 
     private void OnDisable()
     {
+        WaterLimit.GoDeep -= ChangeParticleWater;
+
         _cancellationTokenSource?.Cancel();
     }
-    /*private void LateUpdate()
-    {
-        Quaternion lookRotation = Quaternion.Euler(new Vector3(0f, 0f, AngleBetweenPoints(transform.position, Target.position) + 90.0f));
-        transform.rotation = lookRotation;
-
-        _spriteRenderer.flipX = Target.position.x > transform.position.x;
-
-        float AngleBetweenPoints(Vector2 a, Vector2 b) => Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
-    }*/
 
     private void FixedUpdate()
     {
@@ -58,6 +61,15 @@ public class RangedEnemy : EnemyController
             await UniTask.Delay(TimeSpan.FromSeconds(_enemySO.Coldown), cancellationToken: _cancellationTokenSource.Token);
         }
     }
+
+    private void ChangeParticleWater()
+    {
+        if (_particleSystem.TryGetComponent(out ParticleSystemRenderer value))
+            value.sharedMaterial = _waterMaterial;
+        else
+            _particleSystem.gameObject.SetActive(false);
+    }
+
     private void OnDestroy()
     {
         _cancellationTokenSource?.Dispose();
