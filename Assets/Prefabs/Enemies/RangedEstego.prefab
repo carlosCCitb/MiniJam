@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 0
-  _shootSound: {fileID: 0}
+  _shootSound: {fileID: 11400000, guid: 25a20df5d6ffe57478c87f92a3c8ea92, type: 2}
 --- !u!61 &8196976983318427958
 BoxCollider2D:
   m_ObjectHideFlags: 0

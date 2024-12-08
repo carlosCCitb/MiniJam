@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad312203e88eac47a6557fe29a20900, type: 3}
-  m_Name: TestStatic
+  m_Name: Ranged_2weapon
   m_EditorClassIdentifier: 
   Health: 5
   Damage: 5
-  Range: 5
-  Offset: 5
-  FallingSpeed: 0
-  ChaseSpeed: 0
-  TangentSpeed: 0
-  Sign: 0
-  Coldown: 5
-  BulletType: 4
-  BulletSpeed: 2
+  Range: 6
+  Offset: 3
+  FallingSpeed: 3
+  ChaseSpeed: 3
+  TangentSpeed: 6
+  Sign: 1
+  Coldown: 2
+  BulletType: 0
+  BulletSpeed: 5
