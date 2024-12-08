@@ -71,7 +71,7 @@ public class PathManager : MonoBehaviour
         _backgroundTransform.position = new(_backgroundTransform.position.x, _backgroundTotalDisplacement * (_currentDistance / _totalDistanceToTravel), _backgroundTransform.position.z);
 
         ApplyMountainDisplacement();
-        ApplyMountainColoring();
+        //ApplyMountainColoring();
 
         _pointerTransform.position = new(_pointerTransform.position.x, Mathf.Lerp(_progressBarTransform.position.y + _progressBarTransform.rect.max.y, _progressBarTransform.position.y + _progressBarTransform.rect.min.y, _currentDistance / _totalDistanceToTravel), _pointerTransform.position.z);
 

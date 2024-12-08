@@ -9,7 +9,9 @@ public class Prop : MonoBehaviour, Pool<Prop, Prop.Type, Prop[]>.IPoolable
     public enum Type
     { 
         Cloud = 0,
-        Satellite = 1
+        Satellite = 1,
+        Jellyfish = 2,
+        Planet = 3
     }
 
     [SerializeField] private Type _type;
