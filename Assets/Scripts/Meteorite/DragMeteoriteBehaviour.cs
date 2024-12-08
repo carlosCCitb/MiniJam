@@ -17,6 +17,7 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     [SerializeField] private AudioSource _audioSource2;
     private float _startVolume;
     [SerializeField] [Range(0f, 0.2f)] float _volumeAttenuation;
+    [SerializeField] private Material bubbleMaterial;
     public int GetCurrentSkin()
     {
         return _currentSkin;
@@ -70,6 +71,14 @@ public class DragMeteoriteBehaviour : MonoBehaviour
             MeteorSkins[_currentSkin + 5].SetActive(true);
         AdjustParticlesToShape(i);
         
+    }
+    [Button]
+    public void ChangeToWaterParticles()
+    {
+        if (particles.TryGetComponent(out ParticleSystemRenderer value))
+            value.sharedMaterial = bubbleMaterial;
+        else
+            particles.gameObject.SetActive(false);
     }
     public void AdjustParticlesToShape(int i)
     {
