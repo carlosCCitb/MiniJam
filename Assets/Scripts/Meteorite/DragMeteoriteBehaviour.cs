@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
+using NaughtyAttributes;
 public class DragMeteoriteBehaviour : MonoBehaviour
 {
     public List<GameObject> MeteorSkins;
@@ -12,6 +14,7 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     [SerializeField] private float rateMultiplier;
     [SerializeField] private AudioClipConfiguration _demolishRock1;
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioSource _audioSource2;
     private float _startVolume;
     [SerializeField] [Range(0f, 0.2f)] float _volumeAttenuation;
     public int GetCurrentSkin()
@@ -29,7 +32,24 @@ public class DragMeteoriteBehaviour : MonoBehaviour
         emission = particles.emission;
         shape.radius = ShapeValues[0];
         _initialRateOverTime = emission.rateOverTime.constant;
-        _startVolume = _audioSource.volume;
+        _audioSource.volume = 0.5f;
+        _audioSource2.enabled = false;
+        _startVolume = 0.5f;
+        StartCoroutine(StartSound2());
+    }
+    private IEnumerator StartSound2()
+    {
+        yield return new WaitForSeconds(7f);
+        _audioSource2.enabled = true;
+        _audioSource.volume = 0.25f;
+        _audioSource.volume = 0.25f;
+        _startVolume = 0.25f;
+    }
+    [Button]
+    public void ChangeVolume()
+    {
+        _audioSource.volume = 0.3f;
+        _audioSource2.volume = 0.3f;
     }
     public void ChangeSkin(int i)
     {
@@ -37,7 +57,8 @@ public class DragMeteoriteBehaviour : MonoBehaviour
             return;
         if (_currentSkin < 3)
             _demolishRock1.Play();
-        _audioSource.volume = _startVolume - i * _volumeAttenuation; 
+        _audioSource.volume = _startVolume - i * _volumeAttenuation;
+        _audioSource2.volume = _startVolume - i * _volumeAttenuation;
         MeteorSkins[_currentSkin].SetActive(false);
         if(_currentSkin+5 < MeteorSkins.Count)
             MeteorSkins[_currentSkin + 5].SetActive(false);

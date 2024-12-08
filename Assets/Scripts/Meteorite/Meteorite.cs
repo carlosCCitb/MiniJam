@@ -29,8 +29,12 @@ public class Meteorite : MonoBehaviour, IDamageable
 
     private CancellationTokenSource _cancellationTokenSource;
     private DragMeteoriteBehaviour _dragBehaviour;
-    
 
+    [SerializeField] private AudioClipConfiguration _metalHurt1;
+    [SerializeField] private AudioClipConfiguration _metalHurt2;
+    [SerializeField] private float _dmgIsHigh;
+
+    [Button]
     private void Awake()
     {
         _currentHealthPoints = _healthPoints;
@@ -113,6 +117,18 @@ public class Meteorite : MonoBehaviour, IDamageable
             float x when x > 0.2 => 3,
             _ => 4
         };
+        Debug.Log(skin);
+        switch(skin)
+        {
+            case 3:
+                DoSound(damage);
+                 break;
+            case 4:
+                DoSound(damage);
+                break;
+            default:
+                break;
+        }
         _dragBehaviour.ChangeSkin(skin);
 
         Mathf.Max(_currentHealthPoints, 0);
@@ -121,6 +137,13 @@ public class Meteorite : MonoBehaviour, IDamageable
             OnDie();
     }
 
+    public void DoSound(int damage)
+    {
+        if (damage < _dmgIsHigh)
+            _metalHurt1.Play();
+        else
+            _metalHurt2.Play();
+    }
     public void OnDie()
     {
         // TODO
