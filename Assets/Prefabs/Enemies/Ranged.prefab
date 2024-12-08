@@ -83,6 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507b338732965654eaf435adc74fe065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onDieSound1: {fileID: 11400000, guid: 19039221957b2f348abfbe5492c47098, type: 2}
+  _onDieRandom: {fileID: 11400000, guid: 36eccc47f17c97045aef5a5ec1a8ab39, type: 2}
   _type: 0
   _nextDestination: {x: 0, y: 0, z: 0}
   _currentState: {fileID: 0}
@@ -97,6 +99,7 @@ MonoBehaviour:
   _currentHealth: 0
   _deathTime: 0
   _shooter: {fileID: 543540657002267007}
+  _transformToInvert: {fileID: 0}
 --- !u!114 &280233531432595758
 MonoBehaviour:
   m_ObjectHideFlags: 0

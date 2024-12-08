@@ -121,6 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2738d6802f9bf6f4984fd203a9757dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onDieSound1: {fileID: 11400000, guid: 251d2e7d905cd1140a489540125e3b7b, type: 2}
+  _onDieRandom: {fileID: 11400000, guid: 36eccc47f17c97045aef5a5ec1a8ab39, type: 2}
   _type: 2
   _nextDestination: {x: 0, y: 0, z: 0}
   _currentState: {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}
