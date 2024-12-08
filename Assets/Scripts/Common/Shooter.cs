@@ -11,7 +11,6 @@ public class Shooter : MonoBehaviour
         GameManager.Instance.BulletPool.Spawn(type, initialPosition, lookRotation, _isPlayer ? BulletPool.PlayerBulletLayer : BulletPool.EnemyBulletLayer)
             .SetValues(velocity, damage);
         _shootSound.Play();
-
         float AngleBetweenPoints(Vector2 a, Vector2 b) => Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
     

@@ -5,6 +5,7 @@ public class AttackState : NormalStates
 {
     public override void OnStateEnter(EnemyController enemyController)
     {
+
     }
 
     public override void OnStateExit(EnemyController enemyController)

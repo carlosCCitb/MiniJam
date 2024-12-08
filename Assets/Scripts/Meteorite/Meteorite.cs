@@ -69,7 +69,7 @@ public class Meteorite : MonoBehaviour, IDamageable
 
         ParticleSystem.EmissionModule emmision = _fireParticleSystem.emission;
         float factor = Mathf.InverseLerp(_minMaxSpeed.x, _minMaxSpeed.y, _currentVerticalSpeed);
-        emmision.rateOverDistanceMultiplier = Mathf.Lerp(0.0f, 500.0f, factor);
+        emmision.rateOverTime = Mathf.Lerp(0.0f, 500.0f, factor);
     }
 
     private void OnInputMoveChanged(Vector2 input)

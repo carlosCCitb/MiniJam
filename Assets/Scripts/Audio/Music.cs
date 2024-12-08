@@ -19,6 +19,12 @@ public class Music : MonoBehaviour
     private void OnEnable()
     {
         _cancellationTokenSource = new();
+        WaterLimit.GoDeep += OnChangeToWater;
+    }
+    private void OnDisable()
+    {
+        _cancellationTokenSource?.Cancel();
+        WaterLimit.GoDeep -= OnChangeToWater;
     }
     [Button]
     public void OnChangeToWater()
@@ -43,9 +49,5 @@ public class Music : MonoBehaviour
     private void OnDestroy()
     {
         _cancellationTokenSource?.Dispose();
-    }
-    private void OnDisable()
-    {
-        _cancellationTokenSource?.Cancel();
     }
 }
