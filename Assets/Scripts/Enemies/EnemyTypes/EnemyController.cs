@@ -23,7 +23,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [SerializeField] protected NormalStates _currentState;
     [SerializeField] protected MovementStatesSO _currentMovementState;
     [SerializeField] protected EnemySO _enemySO;
-    [SerializeField] protected SpriteRenderer _spriteRenderer;
+    [SerializeField] protected SpriteRenderer[] _spriteRenderer;
     public Transform Target;
     public Transform TargetToHit;
     [SerializeField] private Color RedColor;
@@ -53,7 +53,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         _collider.enabled = true;
         _currentHealth = _enemySO.Health;
         transform.localScale = new Vector3(1, 1, 1);
-        _spriteRenderer.color = Color.white;
+        foreach (var sprite in _spriteRenderer)
+            sprite.color = Color.white;
         GoToMovingState<ChaseState>();
         GoToState<FallingState>();
     }
@@ -78,7 +79,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource = new();
         _collider.enabled = false;
-        _spriteRenderer.color = Color.white;
+        foreach (var sprite in _spriteRenderer)
+            sprite.color = Color.white;
         DeathAsync().Forget();
         GoToMovingState<InerceState>();
     }
@@ -143,7 +145,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         for (int i = 0; i < times; i++)
         {
             var factor = i * timePart / _deathTime;
-            _spriteRenderer.color = Color.Lerp(Color.white, Color.black, factor);
+            foreach (var sprite in _spriteRenderer)
+                sprite.color = Color.Lerp(Color.white, Color.black, factor);
             transform.localScale = Vector3.Lerp(new Vector3(1, 1, 1), Vector3.zero, factor);
             await UniTask.WaitForSeconds(timePart, cancellationToken: _cancellationTokenSource.Token);
         }
@@ -160,18 +163,21 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
             time = 0;
             while(time < blinkDuration)
             {
-                _spriteRenderer.color = Color.Lerp(Color.white, RedColor, time/blinkDuration);
+                foreach (var sprite in _spriteRenderer)
+                    sprite.color = Color.Lerp(Color.white, RedColor, time/blinkDuration);
                 await UniTask.Yield(cancellationToken: _cancellationTokenSource2.Token);
                 time += Time.deltaTime;
             }
             time = 0;
             while (time < blinkDuration)
             {
-                _spriteRenderer.color = Color.Lerp(RedColor, Color.white, time/blinkDuration);
+                foreach (var sprite in _spriteRenderer)
+                    sprite.color = Color.Lerp(RedColor, Color.white, time/blinkDuration);
                 await UniTask.Yield(cancellationToken: _cancellationTokenSource2.Token);
                 time += Time.deltaTime;
             }
-            _spriteRenderer.color = Color.white;
+            foreach (var sprite in _spriteRenderer)
+                sprite.color = Color.white;
         }
         RequestDespawn();
     }

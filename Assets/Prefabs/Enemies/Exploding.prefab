@@ -128,7 +128,8 @@ MonoBehaviour:
   _currentState: {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   _enemySO: {fileID: 11400000, guid: db816694ecec411439e0aa38c28e75e9, type: 2}
-  _spriteRenderer: {fileID: 7098431659982256263}
+  _spriteRenderer:
+  - {fileID: 7098431659982256263}
   Target: {fileID: 0}
   TargetToHit: {fileID: 0}
   RedColor: {r: 0.6679245, g: 0.2961552, b: 0.2961552, a: 1}

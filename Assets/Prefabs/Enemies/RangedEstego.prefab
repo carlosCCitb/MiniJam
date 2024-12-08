@@ -5049,7 +5049,12 @@ MonoBehaviour:
   _currentState: {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
   _enemySO: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer:
+  - {fileID: 2477084627352795585}
+  - {fileID: 1661592411359393054}
+  - {fileID: 618925084906412436}
+  - {fileID: 6775579821742366857}
+  - {fileID: 2519568911300762436}
   Target: {fileID: 0}
   TargetToHit: {fileID: 0}
   RedColor: {r: 0, g: 0, b: 0, a: 0}
