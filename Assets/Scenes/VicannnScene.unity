@@ -861,6 +861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MeteoriteParent
       objectReference: {fileID: 0}
+    - target: {fileID: 6237253089448613554, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -925,6 +929,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 568608625932716185, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140304700360003735, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
     - target: {fileID: 4871976245401277937, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _meteorite
       value: 
@@ -933,10 +945,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: 5663285160299751208, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
     - target: {fileID: 6304286702897066912, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _playerTransform
       value: 
       objectReference: {fileID: 1072741083}
+    - target: {fileID: 6849219231068266056, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486353035194707572, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767995501602051356, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772319360311973003, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
     - target: {fileID: 8973039478294651555, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _pointerTransform
       value: 
@@ -1115,6 +1147,10 @@ PrefabInstance:
     - target: {fileID: 1025207021166210180, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025207021166210180, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4809327828404505830, guid: 883f0468294fd9348b93a96ae01017ea, type: 3}
       propertyPath: m_LocalPosition.x
