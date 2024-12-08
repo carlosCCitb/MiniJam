@@ -76,7 +76,7 @@ public class EnemyRotator : MonoBehaviour
                 lookRotation2 = Quaternion.Euler(new Vector3(0f, 0f, angle2 - offsetHand));
             else
             {
-                Debug.Log("AYUDA");
+                //Debug.Log("AYUDA");
                 lookRotation2 = Quaternion.Euler(new Vector3(0f, 0f, angle2 + offsetHand-160f));
             }
         }
