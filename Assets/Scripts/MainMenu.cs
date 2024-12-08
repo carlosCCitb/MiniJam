@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnPlay()
     {
+        _audio.OnDestroy();
         GameManager.Instance.SceneOperationsManager.LoadPlayableScene();
     }
 
@@ -60,20 +61,17 @@ public class MainMenu : MonoBehaviour
             _musicSlider.minValue = 0.001f;
             _effectsSlider.minValue = 0.001f;
 
+            _masterSlider.onValueChanged.AddListener((x) => { SetVolume(x, Type.Master); });
+            _musicSlider.onValueChanged.AddListener((x) => { SetVolume(x, Type.Music); });
+            _effectsSlider.onValueChanged.AddListener((x) => { SetVolume(x, Type.Effects); });
+
             // Setting levels into sliders
             _masterSlider.value = LoadLevel(Type.Master);
             _musicSlider.value = LoadLevel(Type.Music);
             _effectsSlider.value = LoadLevel(Type.Effects);
         }
 
-        public void OnOpen()
-        {
-            _masterSlider.onValueChanged.AddListener((x) => { SetVolume(x, Type.Master); });
-            _musicSlider.onValueChanged.AddListener((x) => { SetVolume(x, Type.Music); });
-            _effectsSlider.onValueChanged.AddListener((x) => { SetVolume(x, Type.Effects); });
-        }
-
-        public void OnClose()
+        public void OnDestroy()
         {
             _masterSlider.onValueChanged.RemoveAllListeners();
             _musicSlider.onValueChanged.RemoveAllListeners();
