@@ -5552,7 +5552,7 @@ MonoBehaviour:
   _collider: {fileID: 9140307168880387657}
   AttackRange: 55
   _currentHealth: 0
-  _deathTime: 0
+  _deathTime: 1.5
   _shooter: {fileID: 6945500632068783655}
   _transformToInvert: {fileID: 347423127084735090}
   _animator: {fileID: 788800712632019516}

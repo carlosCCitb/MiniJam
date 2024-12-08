@@ -360,7 +360,7 @@ MonoBehaviour:
   _collider: {fileID: 2199784780230264977}
   AttackRange: 0
   _currentHealth: 0
-  _deathTime: 0
+  _deathTime: 1.5
   _shooter: {fileID: 9187146695089568835}
   _transformToInvert: {fileID: 0}
   _animator: {fileID: 7740721364540732931}
