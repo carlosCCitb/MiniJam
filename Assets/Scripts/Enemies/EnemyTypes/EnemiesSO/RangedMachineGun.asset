@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad312203e88eac47a6557fe29a20900, type: 3}
-  m_Name: Ranged_normalWeapon
+  m_Name: RangedMachineGun
   m_EditorClassIdentifier: 
   Health: 5
   Damage: 5
-  Range: 6
-  Offset: 3
+  Range: 5
+  Offset: 2
   FallingSpeed: 3
   ChaseSpeed: 3
   TangentSpeed: 6
   Sign: 1
-  Coldown: 2
-  BulletType: 0
-  BulletSpeed: 5
+  Coldown: 0.8
+  BulletType: 4
+  BulletSpeed: 10

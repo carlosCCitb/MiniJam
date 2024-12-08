@@ -318,7 +318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821199821152909793}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.76, y: -5.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   _nextDestination: {x: 0, y: 0, z: 0}
   _currentState: {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
-  _enemySO: {fileID: 11400000, guid: 8dc352064e7b68d43b99b19d5432dc16, type: 2}
+  _enemySO: {fileID: 11400000, guid: e093163ac148956488514d129d868823, type: 2}
   _spriteRenderer: {fileID: 0}
   Target: {fileID: 0}
   TargetToHit: {fileID: 0}
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 0
-  _shootSound: {fileID: 0}
+  _shootSound: {fileID: 11400000, guid: 31370bff23e168d4c80cce1983d12ad7, type: 2}
 --- !u!61 &2199784780230264977
 BoxCollider2D:
   m_ObjectHideFlags: 0

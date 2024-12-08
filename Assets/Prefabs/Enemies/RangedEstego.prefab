@@ -215,13 +215,13 @@ MonoBehaviour:
   _nextDestination: {x: 0, y: 0, z: 0}
   _currentState: {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}
   _currentMovementState: {fileID: 11400000, guid: bf8685c5418c2014dac275a864ebfaf7, type: 2}
-  _enemySO: {fileID: 11400000, guid: 8dc352064e7b68d43b99b19d5432dc16, type: 2}
+  _enemySO: {fileID: 11400000, guid: 4bcc42d285d5b29489657bffb8adbaac, type: 2}
   _spriteRenderer: {fileID: 0}
   Target: {fileID: 0}
   TargetToHit: {fileID: 0}
   RedColor: {r: 0, g: 0, b: 0, a: 0}
   _collider: {fileID: 8196976983318427958}
-  AttackRange: 0
+  AttackRange: 7
   _currentHealth: 0
   _deathTime: 0
   _shooter: {fileID: 8066849027974577732}

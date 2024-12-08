@@ -48,7 +48,7 @@ public class RangedEnemy : EnemyController
     }
     private async UniTaskVoid ShootAsync()
     {
-        await UniTask.WaitUntil(() => Vector3.Distance(transform.position, Target.position) <= _enemySO.Range, cancellationToken: _cancellationTokenSource.Token);
+        await UniTask.WaitUntil(() => Vector3.Distance(transform.position, Target.position) <= AttackRange, cancellationToken: _cancellationTokenSource.Token);
 
         while (enabled)
         {
