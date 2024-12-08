@@ -226,7 +226,7 @@ MonoBehaviour:
   _deathTime: 0
   _shooter: {fileID: 8066849027974577732}
   _transformToInvert: {fileID: 0}
-  _animator: {fileID: 0}
+  _animator: {fileID: 1986978758618181916}
 --- !u!114 &5059426238838554870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +312,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _shootSound: {fileID: 0}
-  _animator: {fileID: 1986978758618181916}
 --- !u!61 &8196976983318427958
 BoxCollider2D:
   m_ObjectHideFlags: 0
