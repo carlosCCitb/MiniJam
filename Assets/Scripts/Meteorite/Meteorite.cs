@@ -117,7 +117,6 @@ public class Meteorite : MonoBehaviour, IDamageable
             float x when x > 0.2 => 3,
             _ => 4
         };
-        Debug.Log(skin);
         switch(skin)
         {
             case 3:
