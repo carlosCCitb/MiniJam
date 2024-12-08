@@ -556,8 +556,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6237253089448613554, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8765461408915225479, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
+      propertyPath: _splashLow
+      value: 
+      objectReference: {fileID: 11400000, guid: 3a87c4f5623e4cf4b97c23c0441dda6a, type: 2}
+    - target: {fileID: 8765461408915225479, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
+      propertyPath: _splashMid
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f85c6b1cca23da4da771a1f27ebe621, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1139,11 +1147,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1202339718918492036, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.3
+      value: 8.03
       objectReference: {fileID: 0}
     - target: {fileID: 1202339718918492036, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.24
+      value: -2.43
       objectReference: {fileID: 0}
     - target: {fileID: 1202339718918492036, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1181,10 +1189,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: RangedEstego
       objectReference: {fileID: 0}
+    - target: {fileID: 8066849027974577732, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
+      propertyPath: _shootSound
+      value: 
+      objectReference: {fileID: 11400000, guid: 480f95de93812de4a81134c4c77423aa, type: 2}
     - target: {fileID: 9032275394094024399, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
       propertyPath: Target
       value: 
       objectReference: {fileID: 1694790331}
+    - target: {fileID: 9032275394094024399, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 8187549788236793442}
     - target: {fileID: 9032275394094024399, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
       propertyPath: TargetToHit
       value: 
@@ -1194,6 +1210,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
+--- !u!95 &8187549788236793442 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1986978758618181916, guid: 0bb6c84b1e40b7942bf7ce68a42dc6bb, type: 3}
+  m_PrefabInstance: {fileID: 7324531105359561783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
