@@ -918,15 +918,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5772858, g: 0.4198113, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: d9b0f2cf9ddf8b6419ad4f996a566870, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 37.5
 --- !u!222 &633091735
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -943,6 +943,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633091732}
   m_CullTransparentMesh: 1
+--- !u!198 &730254027 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3685393252060144752, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
+  m_PrefabInstance: {fileID: 1508293013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &740170360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +1920,10 @@ PrefabInstance:
       propertyPath: _bulletSpawnPoint
       value: 
       objectReference: {fileID: 1550804364}
+    - target: {fileID: 4896719131994230009, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
+      propertyPath: _fireParticleSystem
+      value: 
+      objectReference: {fileID: 730254027}
     - target: {fileID: 6237253089448613554, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
       propertyPath: m_Name
       value: MeteoriteParent
