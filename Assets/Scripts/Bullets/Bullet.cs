@@ -6,7 +6,11 @@ public class Bullet : MonoBehaviour, Pool<Bullet, Bullet.Type, Bullet>.IPoolable
     [Serializable]
     public enum Type
     {
-        Standard = 0
+        Standard = 0,
+        pistol,
+        laser,
+        rifle,
+        machineGun
     }
 
     [SerializeField] private Type _type;
