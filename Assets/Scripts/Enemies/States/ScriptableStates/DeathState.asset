@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StatesToGo:
   - {fileID: 11400000, guid: 8832ed2b4fa61a243a4495594dbd96f5, type: 2}
+  - {fileID: 11400000, guid: 3923f0609a7b5d1469a246e36b2b9c8d, type: 2}
