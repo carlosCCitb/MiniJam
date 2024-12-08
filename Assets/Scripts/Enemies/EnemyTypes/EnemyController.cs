@@ -54,6 +54,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         transform.localScale = new Vector3(1, 1, 1);
         _spriteRenderer.color = Color.white;
         GoToMovingState<ChaseState>();
+        GoToState<FallingState>();
     }
     public EnemySO GetEnemySo()
     {
