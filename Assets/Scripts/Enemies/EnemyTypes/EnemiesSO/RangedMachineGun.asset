@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RangedMachineGun
   m_EditorClassIdentifier: 
   Health: 5
-  Damage: 5
+  Damage: 1
   Range: 5
   Offset: 2
   FallingSpeed: 3
@@ -22,4 +22,4 @@ MonoBehaviour:
   Sign: 1
   Coldown: 0.8
   BulletType: 4
-  BulletSpeed: 10
+  BulletSpeed: 20

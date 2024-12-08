@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RangedPistol
   m_EditorClassIdentifier: 
   Health: 5
-  Damage: 5
+  Damage: 2
   Range: 6
   Offset: 3
   FallingSpeed: 3

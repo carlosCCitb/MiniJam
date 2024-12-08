@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad312203e88eac47a6557fe29a20900, type: 3}
   m_Name: Exploding
   m_EditorClassIdentifier: 
-  Health: 5
+  Health: 2
   Damage: 5
   Range: 5
   Offset: 1
@@ -21,3 +21,5 @@ MonoBehaviour:
   TangentSpeed: 2
   Sign: 0
   Coldown: 2
+  BulletType: 0
+  BulletSpeed: 0
