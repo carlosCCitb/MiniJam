@@ -29,7 +29,6 @@ public class DragMeteoriteBehaviour : MonoBehaviour
         emission = particles.emission;
         shape.radius = ShapeValues[0];
         _initialRateOverTime = emission.rateOverTime.constant;
-        _audioSource = GetComponent<AudioSource>();
         _startVolume = _audioSource.volume;
     }
     public void ChangeSkin(int i)

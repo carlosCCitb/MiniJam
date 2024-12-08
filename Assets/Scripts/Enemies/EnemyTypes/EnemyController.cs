@@ -51,6 +51,8 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         _collider.enabled = true;
         _currentHealth = _enemySO.Health;
         transform.localScale = new Vector3(1, 1, 1);
+        _spriteRenderer.color = Color.white;
+        GoToMovingState<ChaseState>();
     }
     public EnemySO GetEnemySo()
     {
@@ -72,11 +74,12 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     {
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource = new();
-        DeathAsync().Forget();
-        GoToMovingState<InerceState>();
         _collider.enabled = false;
         _spriteRenderer.color = Color.white;
+        DeathAsync().Forget();
+        GoToMovingState<InerceState>();
     }
+
     public void GoToState<T>() where T : NormalStates
     {
         if (_currentState.StatesToGo.Find(obj => obj is T))
@@ -95,7 +98,10 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
             _currentMovementState.OnStateEnter(this);
         }
     }
-    protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
+    protected virtual void RequestDespawn()
+    {
+        OnPoolableDespawnNeeded?.Invoke(this);
+    }
     protected void DoDamage(Rigidbody2D rigidbody)
     {
         if (rigidbody.TryGetComponent(out IDamageable damageable))
@@ -134,6 +140,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
             transform.localScale = Vector3.Lerp(new Vector3(1, 1, 1), Vector3.zero, factor);
             await UniTask.WaitForSeconds(timePart, cancellationToken: _cancellationTokenSource.Token);
         }
+
         RequestDespawn();
     }
     private async UniTaskVoid OnHurtAsync()
