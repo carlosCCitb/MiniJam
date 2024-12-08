@@ -22,7 +22,7 @@ public class RangedEnemy : EnemyController
     }
     private void FixedUpdate()
     {
-        if (Target == null)
+        if (Target.gameObject.activeInHierarchy)
             Target = TargetToHit;
         _currentMovementState.OnStateUpdate(this);
         float DistanceToPlayer = (Target.transform.position - transform.position).magnitude;
