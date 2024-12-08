@@ -11,7 +11,24 @@ public class AudioClipConfiguration : ScriptableObject
     [Serializable]
     public enum Type
     {
-        None = 0
+        None = 0,
+        DinoDie1,
+        DinoDie2,
+        FireRockFalling,
+        LaserShortShot1,
+        LaserShortShot2,
+        MachineGun1,
+        MetalOnHurt1,
+        DinoDie3,
+        OnShootMetal,
+        DemolishRock1,
+        RockSplashWater,
+        ShotGunAndReload,
+        LaserShotGun,
+        SplashLowMass,
+        SplashMidMass,
+        Wilhelm
+
     }
 
     public enum Space
@@ -66,7 +83,7 @@ public class AudioClipConfiguration : ScriptableObject
         if (Application.isPlaying)
             return;
 
-        if (!AssetDatabase.LoadAssetAtPath<AllAudioClipsHolder>("Assets\\ScriptableObjects\\Audio\\AllAudioClipsHolder.asset").TryGetValue(_type, out AudioClip clip))
+        if (!AssetDatabase.LoadAssetAtPath<AllAudioClipsHolder>("Assets\\ScriptableObjects\\AllAudioClipsHolder.asset").TryGetValue(_type, out AudioClip clip))
             return;
 
         typeof(AudioImporter).Assembly

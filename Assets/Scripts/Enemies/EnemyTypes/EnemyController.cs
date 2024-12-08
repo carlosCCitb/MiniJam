@@ -14,7 +14,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         Melee = 1,
         Exploding = 2
     }
-
+    [SerializeField] private AudioClipConfiguration _onDieSound1;
     [SerializeField] private Type _type;
     [SerializeField] private Vector3 _nextDestination;
     [SerializeField] private Stack<Vector3> _destinationPoints;
@@ -95,7 +95,6 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
             _currentMovementState.OnStateEnter(this);
         }
     }
-
     protected virtual void RequestDespawn() => OnPoolableDespawnNeeded?.Invoke(this);
     protected void DoDamage(Rigidbody2D rigidbody)
     {
@@ -122,6 +121,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     public void OnDie()
     {
         GoToState<DeathState>();
+        _onDieSound1.Play();
     }
     private async UniTaskVoid DeathAsync()
     {
@@ -158,7 +158,6 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
                 time += Time.deltaTime;
             }
             _spriteRenderer.color = Color.white;
-
         }
         RequestDespawn();
     }
@@ -166,7 +165,6 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     {
         _cancellationTokenSource?.Dispose();
         _cancellationTokenSource2?.Dispose();
-
     }
     private void OnDisable()
     {

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0349a341c6e1a9742928f5db07ea494e, type: 3}
+  m_Name: ShotGunAndReload
+  m_EditorClassIdentifier: 
+  _type: 12
+  _group: {fileID: 8730354655282568084, guid: a52b1b23a55a5d14ab8017e143d1f670, type: 2}
+  _loop: 0
+  _volume: 0.5
+  _space: 0
+  _stereoPan: 0
+  _minMaxDistance: {x: 1, y: 500}
+  _shouldVaryPitch: 0
+  _minMaxPitch: {x: 0.9, y: 1.1}
