@@ -8,6 +8,7 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     [SerializeField] private int _currentSkin;
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private ParticleSystem particles2;
+    [SerializeField] private ParticleSystem particlesLighting;
     [SerializeField] private List<float> ShapeValues;
     private float _initialRateOverTime;
     private ParticleSystem.ShapeModule shape;
@@ -57,6 +58,9 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     {
         if (_currentSkin == i)
             return;
+
+        particlesLighting.gameObject.SetActive(GetCurrentSkin() < 3);
+
         if (_currentSkin < 3)
             _demolishRock1.Play();
         _audioSource.volume = _startVolume - i * _volumeAttenuation;
