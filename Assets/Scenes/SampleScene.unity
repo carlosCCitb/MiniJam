@@ -616,6 +616,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f6bed565b6d12444b60e6658b55be05, type: 3}
+--- !u!1 &959187202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 959187204}
+  - component: {fileID: 959187203}
+  m_Layer: 0
+  m_Name: CursorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &959187203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959187202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ffb00f08a013ab408db87d8597562e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {r: 1, g: 0, b: 0, a: 1}
+  _noEnemy: {r: 0.37214506, g: 0.6075471, b: 0.23728724, a: 1}
+  _currentCursor: {r: 0, g: 0, b: 0, a: 0}
+  _enemyLayer: 9
+--- !u!4 &959187204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959187202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8391585, y: 0.73677784, z: -0.12633109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1585455647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1212,3 +1260,4 @@ SceneRoots:
   - {fileID: 1675823711}
   - {fileID: 1585455647}
   - {fileID: 719525258}
+  - {fileID: 959187204}
