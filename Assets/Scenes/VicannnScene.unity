@@ -1294,6 +1294,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8486353035194707572, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 8973039478294651555, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _pointerTransform
       value: 
