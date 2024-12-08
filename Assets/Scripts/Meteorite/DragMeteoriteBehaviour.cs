@@ -85,8 +85,6 @@ public class DragMeteoriteBehaviour : MonoBehaviour
         if (_currentSkin == i)
             return;
 
-        particlesLighting.gameObject.SetActive(GetCurrentSkin() < 3);
-
         if (_currentSkin < 3)
             _demolishRock1.Play();
         _audioSource.volume = _startVolume - i * _volumeAttenuation;
@@ -96,6 +94,7 @@ public class DragMeteoriteBehaviour : MonoBehaviour
             MeteorSkins[_currentSkin + 5].SetActive(false);
 
         _currentSkin = i;
+        particlesLighting.gameObject.SetActive(GetCurrentSkin() >= 3);
 
         MeteorSkins[_currentSkin].SetActive(true);
         if (_currentSkin + 5 < MeteorSkins.Count)

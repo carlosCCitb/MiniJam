@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 5250721191051626835}
   - component: {fileID: 2197882683576947630}
   - component: {fileID: 3555794765433370406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bottom_Sea_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
