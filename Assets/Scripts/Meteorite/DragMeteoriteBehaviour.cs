@@ -7,6 +7,7 @@ public class DragMeteoriteBehaviour : MonoBehaviour
     public List<GameObject> MeteorSkins;
     [SerializeField] private int _currentSkin;
     [SerializeField] private ParticleSystem particles;
+    [SerializeField] private ParticleSystem particles2;
     [SerializeField] private List<float> ShapeValues;
     private float _initialRateOverTime;
     private ParticleSystem.ShapeModule shape;
@@ -79,6 +80,11 @@ public class DragMeteoriteBehaviour : MonoBehaviour
             value.sharedMaterial = bubbleMaterial;
         else
             particles.gameObject.SetActive(false);
+
+        if (particles2.TryGetComponent(out value))
+            value.sharedMaterial = bubbleMaterial;
+        else
+            particles2.gameObject.SetActive(false);
     }
     public void AdjustParticlesToShape(int i)
     {

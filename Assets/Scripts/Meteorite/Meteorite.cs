@@ -11,6 +11,7 @@ public class Meteorite : MonoBehaviour, IDamageable
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Shooter _shooter;
     [SerializeField] private PathManager _pathManager;
+    [SerializeField] private ParticleSystem _fireParticleSystem;
 
     [Space, SerializeField] private int _healthPoints;
     [SerializeField, ReadOnly] private int _currentHealthPoints;
@@ -65,6 +66,10 @@ public class Meteorite : MonoBehaviour, IDamageable
         _currentVerticalSpeed = Mathf.Clamp(_currentVerticalSpeed, _minMaxSpeed.x, _minMaxSpeed.y);
 
         _pathManager.AddDisplacement(_currentVerticalSpeed, _minMaxSpeed, Time.fixedDeltaTime);
+
+        ParticleSystem.EmissionModule emmision = _fireParticleSystem.emission;
+        float factor = Mathf.InverseLerp(_minMaxSpeed.x, _minMaxSpeed.y, _currentVerticalSpeed);
+        emmision.rateOverDistanceMultiplier = Mathf.Lerp(0.0f, 500.0f, factor);
     }
 
     private void OnInputMoveChanged(Vector2 input)
