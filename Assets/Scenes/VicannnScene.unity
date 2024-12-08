@@ -936,6 +936,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1634090359549573425, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4871976245401277937, guid: d1dedfe99dce31546b8afde10e12711f, type: 3}
       propertyPath: _meteorite
       value: 
