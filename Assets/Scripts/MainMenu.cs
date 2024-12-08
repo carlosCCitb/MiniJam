@@ -10,10 +10,12 @@ public class MainMenu : MonoBehaviour
     public void InitAudio()
     { 
         _audio.Init();
+        _audio.OnOpen();
     }
 
     public void OnPlay()
     {
+        _audio.OnClose();
         GameManager.Instance.SceneOperationsManager.LoadPlayableScene();
     }
 
