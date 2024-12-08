@@ -10,9 +10,10 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     [Serializable]
     public enum Type
     {
-        Ranged = 0,
-        Melee = 1,
-        Exploding = 2
+        Exploding = 0,
+        RangedPistol = 1,
+        RangedShotgun = 2,
+        RangedGatorinGun = 3
     }
     [SerializeField] private AudioClipConfiguration _onDieSound1;
     [SerializeField] private AudioClipConfiguration _onDieRandom;
