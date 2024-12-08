@@ -15,6 +15,7 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
         Exploding = 2
     }
     [SerializeField] private AudioClipConfiguration _onDieSound1;
+    [SerializeField] private AudioClipConfiguration _onDieRandom;
     [SerializeField] private Type _type;
     [SerializeField] private Vector3 _nextDestination;
     [SerializeField] private Stack<Vector3> _destinationPoints;
@@ -127,7 +128,11 @@ public abstract class EnemyController : MonoBehaviour, Pool<EnemyController, Ene
     public void OnDie()
     {
         GoToState<DeathState>();
-        _onDieSound1.Play();
+        float random = UnityEngine.Random.Range(0, 100);
+        if (random != 0)
+            _onDieSound1.Play();
+        else
+            _onDieRandom.Play();
     }
     private async UniTaskVoid DeathAsync()
     {
