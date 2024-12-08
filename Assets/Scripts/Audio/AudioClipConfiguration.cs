@@ -27,7 +27,10 @@ public class AudioClipConfiguration : ScriptableObject
         LaserShotGun,
         SplashLowMass,
         SplashMidMass,
-        Wilhelm
+        Wilhelm,
+        ManScreaming,
+        ManVictory,
+        Explosion
 
     }
 
